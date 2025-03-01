@@ -52,3 +52,22 @@
     }
   }
 }
+
+@include desktop {
+  .questionForm {
+    padding: 16px;
+    row-gap: 28px;
+
+    &__icon {
+      @include sizes(36px, 36px);
+    }
+
+    &__titles {
+      column-gap: 12px;
+    }
+
+    &__titles-texts {
+      row-gap: 0;
+    }
+  }
+}

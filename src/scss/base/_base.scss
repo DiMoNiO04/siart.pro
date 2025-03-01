@@ -47,8 +47,14 @@ a {
   width: 100%;
 }
 
- @include desktop-xl {
+@include desktop-xl {
   .container {
     max-width: 1215px;
   }
- }
+}
+
+@include desktop {
+  .container {
+    max-width: 982px;
+  }
+}

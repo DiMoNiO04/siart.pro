@@ -75,7 +75,7 @@
 @include desktop-xl {
   .checkbox {
     &__text {
-        @include regularInter12;
+      @include regularInter12;
     }
   }
 }

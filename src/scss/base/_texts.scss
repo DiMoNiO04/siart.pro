@@ -100,7 +100,14 @@
 
 @mixin boldManrope10 {
   font-family: $fontManrope;
-    font-weight: 700;
-    font-size: 10px;
-    line-height: 12px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin boldManrope8 {
+  font-family: $fontManrope;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 12px;
 }

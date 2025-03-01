@@ -40,3 +40,11 @@
     }
   }
 }
+
+@include desktop {
+  .form {
+    &__btn {
+      width: 200px;
+    }
+  }
+}

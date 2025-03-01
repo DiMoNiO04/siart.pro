@@ -107,15 +107,17 @@
 
   &__top-info {
     @include flexCenterBetween;
-        position: absolute;
-          width: 100%;
-          bottom: 4px;
-          padding: 0px 4px;
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    padding: 0px 4px;
   }
 
   &__top-art {
     @include regularManrope12;
     padding: 4px 6px;
+    background-color: $white;
+    border-radius: 5px;
   }
 
   &__top-comment {
@@ -251,64 +253,122 @@
   }
 }
 
-
 @include desktop-xl {
   .cards {
-      column-gap: 16px;
+    column-gap: 16px;
+  }
+
+  .card {
+    border-radius: 12px;
+    row-gap: 8px;
+
+    &__top-btns {
+      right: -2px;
+      top: -2px;
     }
 
-    .card {
-      border-radius: 12px;
+    &__top-art {
+      @include regularManrope10;
+    }
+
+    &__top-comment {
+      padding: 4px 4px 0 4px;
+    }
+
+    &__bottom-title {
+      @include regularInter14;
+      height: 60px;
+    }
+
+    &__bottom-top {
       row-gap: 8px;
-
-      &__top-btns {
-        right: -2px;
-          top: -2px;
-      }
-
-      &__top-art {
-        @include regularManrope10;
-      }
-
-      &__top-comment {
-        padding: 0;
-      }
-
-      &__bottom-title {
-        @include regularInter14;
-        height: 60px;
-      }
-
-      &__bottom-top {
-        row-gap: 8px;
-      }
-
-      &__bottom-status {
-        @include boldManrope10;
-      }
-
-      &__bottom {
-        row-gap: 12px;
-      }
-
-      &__price {
-        @include semiboldInter16;
-      }
-
-      &__prices-old {
-        @include regularInter12;
-      }
-
-      &__top-img {
-        min-height: 140px;
-      }
-
-                &__btns-btn {
-                  @include sizes(36px, 36px); 
-                }
-
-                                &__btns-counts {
-                                  height: 36px;
-                                }
     }
+
+    &__bottom-status {
+      @include boldManrope10;
+    }
+
+    &__bottom {
+      row-gap: 12px;
+    }
+
+    &__price {
+      @include semiboldInter16;
+    }
+
+    &__prices-old {
+      @include regularInter12;
+    }
+
+    &__top-img img {
+      min-height: 140px;
+    }
+
+    &__btns-btn {
+      @include sizes(36px, 36px);
+    }
+
+    &__btns-counts {
+      height: 36px;
+      column-gap: 4px;
+    }
+
+    &__btns-btn {
+      padding: 8px;
+    }
+  }
+}
+
+@include desktop {
+  .cards {
+    column-gap: 8px;
+  }
+
+  .card {
+    padding: 8px;
+
+    &__top-btn {
+      @include sizes(32px, 32px);
+    }
+
+    &__top-btns {
+      column-gap: 8px;
+      right: 0;
+      top: 0;
+    }
+
+    &__top-img img {
+      min-height: 148px;
+    }
+
+    &__top-info {
+      padding: 0 4px;
+      bottom: 0;
+    }
+
+    &__bottom-top {
+      row-gap: 12px;
+    }
+
+    &__bottom-status {
+      padding: 2px 4px;
+      @include boldManrope8;
+      border-radius: 3px;
+    }
+
+    &__bottom {
+      row-gap: 12px;
+    }
+
+    &__prices {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-top: 4px;
+      row-gap: 4px;
+    }
+
+    &__prices-old {
+      line-height: 16px;
+    }
+  }
 }

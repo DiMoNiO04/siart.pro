@@ -1,6 +1,7 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .section {
   padding: 68px 0;
@@ -17,5 +18,15 @@
 
   &__title {
     @include mediumInter28;
+  }
+}
+
+@include desktop-xl {
+  .section {
+    padding: 48px 0;
+
+    &__title {
+      @include mediumInter24;
+    }
   }
 }

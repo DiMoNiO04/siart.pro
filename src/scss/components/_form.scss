@@ -1,6 +1,7 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .form {
   @include flexColumn;
@@ -23,5 +24,19 @@
 
   &__btn {
     width: 256px;
+  }
+}
+
+@include desktop-xl {
+  .form {
+    row-gap: 12px;
+
+    &__btns {
+      margin-top: 4px;
+    }
+
+    &__btn {
+      width: 224px;
+    }
   }
 }

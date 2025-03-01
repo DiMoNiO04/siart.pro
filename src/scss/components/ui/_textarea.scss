@@ -1,6 +1,7 @@
 @use '../../base/vars' as *;
 @use '../../base/mixins' as *;
 @use '../../base/texts' as *;
+@use '../../base/breakpoints' as *;
 
 .textarea {
   @include flexColumn;
@@ -21,6 +22,7 @@
     height: 132px;
     transition: background-color 0.2s ease-in;
     border-radius: 12px;
+    line-height: 20px;
 
     .textarea:not(.textarea--error):not(.textarea--success) & {
       @include hover {
@@ -74,6 +76,22 @@
     .textarea__icon-success,
     .textarea__success {
       display: block;
+    }
+  }
+}
+
+
+@include desktop-xl {
+  .textarea {
+    &__textarea {
+      @include regularInter14;
+      padding: 12px 48px 12px 16px;
+      height: 68px;
+    }
+
+    &__error,
+    &__success {
+      @include regularManrope10;
     }
   }
 }

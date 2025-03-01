@@ -1,6 +1,7 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .questionForm {
   @include flexColumn;
@@ -10,7 +11,7 @@
   border-radius: 24px;
 
   &__icon {
-    @include sizes(64px, 64px);
+    @include sizes(60px, 60px);
   }
 
   &__titles {
@@ -30,5 +31,24 @@
   &__titles-text {
     @include regularInter16;
     color: $grey;
+  }
+}
+
+@include desktop-xl {
+  .questionForm {
+    padding: 16px 24px;
+    row-gap: 16px;
+
+    &__icon {
+      @include sizes(48px, 48px);
+    }
+
+    &__titles-title {
+      @include mediumInter16;
+    }
+
+    &__titles-text {
+      @include regularInter14;
+    }
   }
 }

@@ -1,6 +1,7 @@
 @use '../base/mixins' as *;
 @use '../base/vars' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .cards {
   column-gap: 20px;
@@ -70,7 +71,7 @@
     display: flex;
     column-gap: 4px;
     right: 4px;
-    top: 4px;
+    top: 0;
     z-index: 2;
   }
 
@@ -106,6 +107,10 @@
 
   &__top-info {
     @include flexCenterBetween;
+        position: absolute;
+          width: 100%;
+          bottom: 4px;
+          padding: 0px 4px;
   }
 
   &__top-art {
@@ -147,7 +152,7 @@
   &__bottom-items {
     display: flex;
     align-items: center;
-    column-gap: 4px;
+    column-gap: 8px;
   }
 
   &__bottom-status {
@@ -244,4 +249,66 @@
       }
     }
   }
+}
+
+
+@include desktop-xl {
+  .cards {
+      column-gap: 16px;
+    }
+
+    .card {
+      border-radius: 12px;
+      row-gap: 8px;
+
+      &__top-btns {
+        right: -2px;
+          top: -2px;
+      }
+
+      &__top-art {
+        @include regularManrope10;
+      }
+
+      &__top-comment {
+        padding: 0;
+      }
+
+      &__bottom-title {
+        @include regularInter14;
+        height: 60px;
+      }
+
+      &__bottom-top {
+        row-gap: 8px;
+      }
+
+      &__bottom-status {
+        @include boldManrope10;
+      }
+
+      &__bottom {
+        row-gap: 12px;
+      }
+
+      &__price {
+        @include semiboldInter16;
+      }
+
+      &__prices-old {
+        @include regularInter12;
+      }
+
+      &__top-img {
+        min-height: 140px;
+      }
+
+                &__btns-btn {
+                  @include sizes(36px, 36px); 
+                }
+
+                                &__btns-counts {
+                                  height: 36px;
+                                }
+    }
 }

@@ -3,12 +3,20 @@
     <div class="section__titles">
       <h2 class="section__title">Новые поступления</h2>
       <div class="section__navigation swiper-navigation">
-        <button type="button" class="swiper-navigation__btn swiper-navigation__btn--prev" aria-label="Предыдущий слайд">
+        <button
+          type="button"
+          class="swiper-navigation__btn swiper-navigation__arrivals--prev"
+          aria-label="Предыдущий слайд"
+        >
           <svg class="icon icon--swiper">
             <use href="./img/svgsprite/sprite.symbol.svg#arrowLeft"></use>
           </svg>
         </button>
-        <button type="button" class="swiper-navigation__btn swiper-navigation__btn--next" aria-label="Следующий слайд">
+        <button
+          type="button"
+          class="swiper-navigation__btn swiper-navigation__arrivals--next"
+          aria-label="Следующий слайд"
+        >
           <svg class="icon icon--swiper">
             <use href="./img/svgsprite/sprite.symbol.svg#arrowRight"></use>
           </svg>
@@ -16,7 +24,7 @@
       </div>
     </div>
     <div class="cards cards--5">
-      <div class="cards__card card">
+      <a href="#" class="cards__card card">
         <div class="card__top">
           <div class="card__top-btns">
             <button type="button" class="card__top-btn" aria-label="Сравнить">
@@ -33,6 +41,12 @@
           <div class="card__top-img">
             <img src="./img/cards/card-1.png" alt="Ингалятор компрессорный компактный MED-125" />
           </div>
+          <button type="button" class="card__top-view" aria-label="Быстрый просмотр">
+            <svg class="card__top-view-icon icon icon--viewFull">
+              <use href="./img/svgsprite/sprite.symbol.svg#viewFull"></use>
+            </svg>
+            <span class="card__top-view-text">Быстрый просмотр</span>
+          </button>
           <div class="card__top-info">
             <div class="card__top-art">Арт. 4501390</div>
             <div class="card__top-comment">
@@ -58,9 +72,14 @@
             </div>
             <div class="card__prices-old">1 494 ₽</div>
           </div>
+          <div class="card__btns">
+            <button type="button" class="card__btn btn btn--white">
+              <span>Заказать</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="cards__card card">
+      </a>
+      <a href="#" class="cards__card card">
         <div class="card__top">
           <div class="card__top-btns">
             <button type="button" class="card__top-btn" aria-label="Сравнить">
@@ -77,6 +96,12 @@
           <div class="card__top-img">
             <img src="./img/cards/card-2.png" alt="Ингалятор компрессорный компактный MED-125" />
           </div>
+          <button type="button" class="card__top-view" aria-label="Быстрый просмотр">
+            <svg class="card__top-view-icon icon icon--viewFull">
+              <use href="./img/svgsprite/sprite.symbol.svg#viewFull"></use>
+            </svg>
+            <span class="card__top-view-text">Быстрый просмотр</span>
+          </button>
           <div class="card__top-info">
             <div class="card__top-art">Арт. 4501390</div>
             <div class="card__top-comment">
@@ -102,9 +127,24 @@
             </div>
             <div class="card__prices-old">1 494 ₽</div>
           </div>
+          <div class="card__btns">
+            <div class="card__btns-counts">
+              <button type="button" class="card__btns-btn card__btns-btn--decrease" aria-label="Уменьшить количество">
+              <svg class="icon icon--minus">
+                <use href="./img/svgsprite/sprite.symbol.svg#minus"></use>
+              </svg>
+              </button>
+              <span class="card__btns-count">1</span>
+              <button type="button" class="card__btns-btn card__btns-btn--increase" aria-label="Увеличить количество">
+                <svg class="icon icon--plus">
+                  <use href="./img/svgsprite/sprite.symbol.svg#plus"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="cards__card card">
+      </a>
+      <a href="#" class="cards__card card">
         <div class="card__top">
           <div class="card__top-btns">
             <button type="button" class="card__top-btn" aria-label="Сравнить">
@@ -121,6 +161,12 @@
           <div class="card__top-img">
             <img src="./img/cards/card-3.png" alt="Ингалятор компрессорный компактный MED-125" />
           </div>
+          <button type="button" class="card__top-view" aria-label="Быстрый просмотр">
+            <svg class="card__top-view-icon icon icon--viewFull">
+              <use href="./img/svgsprite/sprite.symbol.svg#viewFull"></use>
+            </svg>
+            <span class="card__top-view-text">Быстрый просмотр</span>
+          </button>
           <div class="card__top-info">
             <div class="card__top-art">Арт. 4501390</div>
             <div class="card__top-comment">
@@ -147,9 +193,17 @@
             </div>
             <div class="card__prices-old">1 494 ₽</div>
           </div>
+          <div class="card__btns">
+            <button type="button" class="card__btn btn btn--icon" aria-label="В корзину">
+              <svg class="btn__icon icon icon--cart">
+                <use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+              </svg>
+              <span>В&#160;корзину</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="cards__card card">
+      </a>
+      <a href="#" class="cards__card card">
         <div class="card__top">
           <div class="card__top-btns">
             <button type="button" class="card__top-btn" aria-label="Сравнить">
@@ -166,6 +220,12 @@
           <div class="card__top-img">
             <img src="./img/cards/card-4.png" alt="Ингалятор компрессорный компактный MED-125" />
           </div>
+          <button type="button" class="card__top-view" aria-label="Быстрый просмотр">
+            <svg class="card__top-view-icon icon icon--viewFull">
+              <use href="./img/svgsprite/sprite.symbol.svg#viewFull"></use>
+            </svg>
+            <span class="card__top-view-text">Быстрый просмотр</span>
+          </button>
           <div class="card__top-info">
             <div class="card__top-art">Арт. 4501390</div>
             <div class="card__top-comment">
@@ -191,9 +251,17 @@
             </div>
             <div class="card__prices-old">1 494 ₽</div>
           </div>
+          <div class="card__btns">
+            <button type="button" class="card__btn btn btn--icon" aria-label="В корзину">
+              <svg class="btn__icon icon icon--cart">
+                <use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+              </svg>
+              <span>В&#160;корзину</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="cards__card card">
+      </a>
+      <a href="#" class="cards__card card">
         <div class="card__top">
           <div class="card__top-btns">
             <button type="button" class="card__top-btn" aria-label="Сравнить">
@@ -210,6 +278,12 @@
           <div class="card__top-img">
             <img src="./img/cards/card-4.png" alt="Ингалятор компрессорный компактный MED-125" />
           </div>
+          <button type="button" class="card__top-view" aria-label="Быстрый просмотр">
+            <svg class="card__top-view-icon icon icon--viewFull">
+              <use href="./img/svgsprite/sprite.symbol.svg#viewFull"></use>
+            </svg>
+            <span class="card__top-view-text">Быстрый просмотр</span>
+          </button>
           <div class="card__top-info">
             <div class="card__top-art">Арт. 4501390</div>
             <div class="card__top-comment">
@@ -222,9 +296,7 @@
         </div>
         <div class="card__bottom">
           <div class="card__bottom-top">
-            <h3 class="card__bottom-title">
-              Насадки CS&#160;Medica SP-12 для зубной щетки CS&#160;Medica SonicPulsar CS-131
-            </h3>
+            <h3 class="card__bottom-title">Насадки CS&#160;Medica SP-12 для зубной щетки CS&#160;Medica SonicPulsar CS-131</h3>
             <div class="card__bottom-items">
               <span class="card__bottom-status card__bottom-status--no-stock">Нет в&#160;наличии</span>
               <span class="card__bottom-status card__bottom-status--new">Новинка</span>
@@ -238,8 +310,16 @@
             </div>
             <div class="card__prices-old">1 494 ₽</div>
           </div>
+          <div class="card__btns">
+            <button type="button" class="card__btn btn btn--icon" aria-label="В корзину">
+              <svg class="btn__icon icon icon--cart">
+                <use href="./img/svgsprite/sprite.symbol.svg#cart"></use>
+              </svg>
+              <span>В&#160;корзину</span>
+            </button>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>

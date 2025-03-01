@@ -21,4 +21,17 @@
   &--comment {
     fill: $blueHover;
   }
+
+  &--cart {
+    fill: $blue;
+  }
+
+  &--plus,
+  &--minus {
+    fill: $black;
+  }
+
+  &--viewFull {
+    fill: $placeholder;
+  }
 }

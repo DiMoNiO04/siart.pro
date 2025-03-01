@@ -18,13 +18,57 @@
   background-color: $white;
   padding: 12px;
   position: relative;
+  transition: transform 0.2s ease-in;
+  will-change: transform;
+
+  @include hover {
+    transform: scale(1.03);
+
+    .card__top-view {
+      opacity: 100;
+      z-index: 2;
+    }
+  }
+
+  &__top {
+    position: relative;
+  }
+
+  &__top-view {
+    @include flexCenter;
+    width: fit-content;
+    column-gap: 8px;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: $shadowCardBtnHover;
+    background-color: $white;
+    padding: 4px 10px;
+    border-radius: 7px;
+    transition: z-index 0.2s ease-in-out, opacity 0.2s ease-in;
+    z-index: -2;
+    opacity: 0;
+  }
+
+  &__top-view-icon {
+    @include sizes(20px, 20px);
+    flex-shrink: 0;
+  }
+
+  &__top-view-text {
+    @include boldManrope12;
+    color: $placeholder;
+    flex-shrink: 0;
+  }
 
   &__top-btns {
     position: absolute;
     display: flex;
     column-gap: 4px;
-    right: 16px;
-    top: 12px;
+    right: 4px;
+    top: 4px;
     z-index: 2;
   }
 
@@ -161,4 +205,41 @@
   &__prices-old {
     text-decoration: line-through;
   }
+
+  &__btns-counts {
+    @include sizes(100%, 48px);
+    @include flexCenterBetween;
+    column-gap: 8px;
+  }
+
+  &__btns-count,
+  &__btns-btn {
+    @include fullSize;
+    @include flexCenter;
+    @include mediumInter16;
+    border: 1px solid $borderGrey;
+    border-radius: 7px;
+    padding: 12px;
+  }
+
+    &__btns-btn {
+      @include sizes(48px, 48px);
+      flex-shrink: 0;
+      transition: background-color 0.2s ease-in;
+
+      &:not(:disabled) {
+        @include hover {
+          svg {
+            fill: $blue;
+          }
+        }
+
+        &:active {
+          background-color: $blue;
+          svg {
+            fill: $white;
+          }
+        }
+      }
+    }
 }

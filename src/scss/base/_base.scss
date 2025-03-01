@@ -29,6 +29,10 @@ footer {
   margin-top: auto;
 }
 
+a {
+  color: $textColor;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 $containerPadding;

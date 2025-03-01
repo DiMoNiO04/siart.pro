@@ -1,0 +1,92 @@
+@use 'vars' as *;
+
+@mixin regularInter12 {
+  font-family: $fontInter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@mixin regularInter14 {
+  font-family: $fontInter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin regularInter16 {
+  font-family: $fontInter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin mediumInter16 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin mediumInter24 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+@mixin mediumInter28 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+@mixin mediumInter14 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin mediumInter18 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@mixin mediumInter20 {
+  font-family: $fontInter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@mixin semiboldInter16 {
+  font-family: $fontInter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin semiboldInter20 {
+  font-family: $fontInter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin regularManrope12 {
+  font-family: $fontManrope;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin boldManrope12 {
+  font-family: $fontManrope;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,22 +1,27 @@
-:root {
-  --container-width: 1200px;
-  --container-padding: 15px;
+$containerWidth: 1690px;
+$containerPadding: 15px;
 
-  --font-main: 'Inter', sans-serif;
-  --font-accent: 'Manrope', sans-serif;
-  --font-titles: var(--font-accent);
+$fontInter: 'Inter', sans-serif;
+$fontManrope: 'Manrope', sans-serif;
 
-  --page-bg: #fff;
-  --text-color: #000;
-  --accent: #ac182c;
-  --link-color: #2578c8;
+$white: #ffffff;
+$pageBgColor: #f5f8fa;
+$textColor: #1a1a1a;
+$blue: #4092f1;
+$blueSec: #edf5fe;
+$borderGrey: #eceff8;
 
-  --laptop-size: 1199px;
-  --tablet-size: 959px;
-  --mobile-size: 599px;
-}
+$placeholder: #6a727b;
+$error: #ed5858;
+$errorSec: #faf1f1;
+$green: #64b847;
+$greenSec: #f0f7ee;
+$hit: #ec7b52;
+$yellow: #fcdf28;
 
-.dark {
-  --page-bg: #252526;
-  --text-color: #fff;
-}
+$desktopxXL: 1920px;
+$desktop: 1400px;
+$laptop: 1024px;
+$tablet: 768px;
+$mobLG: 767px;
+$mobSM: 360px;

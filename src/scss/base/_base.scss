@@ -1,29 +1,21 @@
+@use 'vars' as *;
+@use 'texts' as *;
+
 html {
   scroll-behavior: smooth;
-  background-color: rgb(39, 39, 39);
+  background-color: $white;
 }
 
 body {
-  background-color: var(--page-bg);
-  color: var(--text-color);
-  font-family: var(--font-main);
+  background-color: $white;
+  color: $textColor;
+  font-family: $fontInter;
   text-wrap: balance;
+  @include regularInter12;
 }
 
 img {
   display: block;
-}
-
-a {
-  color: var(--link-color);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-padding);
-
-  max-width: var(--container-width);
-  width: 100%;
 }
 
 html,
@@ -33,11 +25,13 @@ body {
   flex-direction: column;
 }
 
-.footer {
+footer {
   margin-top: auto;
 }
 
-.footer {
-  padding: 60px 0;
-  background-color: #e3e3e3;
+.container {
+  margin: 0 auto;
+  padding: 0 $containerPadding;
+  max-width: $containerWidth;
+  width: 100%;
 }

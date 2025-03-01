@@ -47,7 +47,9 @@
     background-color: $white;
     padding: 4px 10px;
     border-radius: 7px;
-    transition: z-index 0.2s ease-in-out, opacity 0.2s ease-in;
+    transition:
+      z-index 0.2s ease-in-out,
+      opacity 0.2s ease-in;
     z-index: -2;
     opacity: 0;
   }
@@ -222,24 +224,24 @@
     padding: 12px;
   }
 
-    &__btns-btn {
-      @include sizes(48px, 48px);
-      flex-shrink: 0;
-      transition: background-color 0.2s ease-in;
+  &__btns-btn {
+    @include sizes(48px, 48px);
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in;
 
-      &:not(:disabled) {
-        @include hover {
-          svg {
-            fill: $blue;
-          }
+    &:not(:disabled) {
+      @include hover {
+        svg {
+          fill: $blue;
         }
+      }
 
-        &:active {
-          background-color: $blue;
-          svg {
-            fill: $white;
-          }
+      &:active {
+        background-color: $blue;
+        svg {
+          fill: $white;
         }
       }
     }
+  }
 }

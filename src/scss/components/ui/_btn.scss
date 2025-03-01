@@ -17,20 +17,20 @@
   &--icon {
     background-color: $blueSec;
     color: $blue;
-    
-      .btn__icon {
-        @include sizes(20px, 20px);
+
+    .btn__icon {
+      @include sizes(20px, 20px);
+    }
+
+    &:not(:disabled) {
+      @include hover {
+        background-color: $blueHover;
       }
 
-      &:not(:disabled) {
-        @include hover {
-            background-color: $blueHover;
-          }
-        
-          &:active {
-            background-color: $blueActive;
-          }
+      &:active {
+        background-color: $blueActive;
       }
+    }
   }
 
   &--white {
@@ -39,13 +39,13 @@
     color: $blue;
 
     &:not(:disabled) {
-        @include hover {
-          background-color: $borderGrey;
-        }
-    
-        &:active {
-          background-color: $blueActive;
-        }
+      @include hover {
+        background-color: $borderGrey;
       }
+
+      &:active {
+        background-color: $blueActive;
+      }
+    }
   }
 }

@@ -22,7 +22,8 @@
     fill: $blueHover;
   }
 
-  &--cart {
+  &--cart,
+  &--file {
     fill: $blue;
   }
 
@@ -33,5 +34,13 @@
 
   &--viewFull {
     fill: $placeholder;
+  }
+
+  &--reset {
+    stroke: $placeholder;
+  }
+
+  &--successInput {
+    stroke: $green;
   }
 }

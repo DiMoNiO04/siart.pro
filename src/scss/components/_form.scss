@@ -1,0 +1,13 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+@use '../base/texts' as *;
+
+.form {
+  @include flexColumn;
+  row-gap: 20px;
+
+  &__inputs {
+    @include grid(3);
+    column-gap: 12px;
+  }
+}

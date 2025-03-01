@@ -5,3 +5,16 @@
 @use './base/base';
 @use './base/fontsAutoGen';
 @use './base/texts';
+@use './base/icons';
+
+@use './components/ui/swiper-navigation';
+@use './components/ui/btn';
+@use './components/ui/input';
+@use './components/ui/textarea';
+@use './components/ui/checkbox';
+
+@use './components/section';
+@use './components/cards';
+@use './components/questionForm';
+@use './components/form';
+@use './components/modals';

@@ -9,7 +9,6 @@ html {
 body {
   background-color: $white;
   color: $textColor;
-  font-family: $fontInter;
   text-wrap: balance;
   @include regularInter12;
 }
@@ -27,6 +26,10 @@ body {
 
 footer {
   margin-top: auto;
+}
+
+a {
+  color: $textColor;
 }
 
 .container {

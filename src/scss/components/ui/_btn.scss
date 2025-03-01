@@ -1,0 +1,66 @@
+@use '../../base/mixins' as *;
+@use '../../base/vars' as *;
+@use '../../base/texts' as *;
+
+.btn {
+  @include sizes(100%, 52px);
+  @include flexCenter;
+  column-gap: 10px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease-in;
+
+  span {
+    @include regularInter14;
+  }
+
+  &--icon {
+    background-color: $blueSec;
+    color: $blue;
+
+    .btn__icon {
+      @include sizes(20px, 20px);
+    }
+
+    &:not(:disabled) {
+      @include hover {
+        background-color: $blueHover;
+      }
+
+      &:active {
+        background-color: $blueActive;
+      }
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    border: 1px solid $blue;
+    color: $blue;
+
+    &:not(:disabled) {
+      @include hover {
+        background-color: $borderGrey;
+      }
+
+      &:active {
+        background-color: $blueActive;
+      }
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+
+    &:not(:disabled) {
+      @include hover {
+        background-color: $blueBtnHover;
+      }
+
+      &:active {
+        background-color: $blueBtnActive;
+      }
+    }
+  }
+}

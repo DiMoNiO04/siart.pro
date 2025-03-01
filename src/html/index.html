@@ -3,7 +3,10 @@
   @@include('layout/head.html', { 'title': "Тестовое" })
 
   <body>
-    <main class="docs">main</main>
+    <main class="docs">
+      @@include('components/sections/arrivals.html') @@include('components/sections/questionForm.html')
+      @@include('layout/modals.html')
+    </main>
 
     @@include('layout/scripts.html')
   </body>

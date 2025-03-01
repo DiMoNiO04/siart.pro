@@ -1,6 +1,7 @@
 @use '../base/mixins' as *;
 @use '../base/vars' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .modal {
   display: none !important;
@@ -74,6 +75,57 @@
     &:active {
       box-shadow: $shadowBtn;
       background-color: $blueActive;
+    }
+  }
+}
+
+@include desktop-xl {
+  .modal {
+    &__title {
+      @include mediumInter16;
+    }
+
+    &__text {
+      @include regularInter12;
+    }
+  }
+}
+
+@include tablet {
+  .modal {
+    background-color: $white;
+
+    &__content {
+      box-shadow: none;
+      row-gap: 16px;
+      max-width: 200px;
+      padding: 0;
+    }
+
+    &__inner {
+      margin-top: 48px;
+      position: static;
+    }
+
+    &__icon {
+      @include sizes(80px, 80px);
+    }
+
+    &__close {
+      right: 28px;
+      top: 28px;
+    }
+  }
+}
+
+@include mobile-lg {
+  .modal {
+    &__inner {
+      margin-top: 64px;
+    }
+
+    &__title {
+      @include mediumInter14;
     }
   }
 }

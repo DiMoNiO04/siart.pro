@@ -79,3 +79,11 @@
     }
   }
 }
+
+@include mobile-lg {
+  .checkbox {
+    &__text {
+      line-height: 16px;
+    }
+  }
+}

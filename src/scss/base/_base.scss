@@ -35,38 +35,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
   max-width: 1690px;
   width: 100%;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1690px;
-  width: 100%;
-}
-
-@include desktop-xl {
-  .container {
-    max-width: 1215px;
-  }
-}
-
-@include desktop {
-  .container {
-    max-width: 982px;
-  }
-}
-
-@include laptop {
-  .container {
-    max-width: 726px;
-  }
-}
-
-@include tablet {
-  .container {
-    max-width: 685px;
-  }
 }

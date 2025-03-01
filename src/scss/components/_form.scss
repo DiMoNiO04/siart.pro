@@ -63,3 +63,28 @@
     }
   }
 }
+
+@include mobile-lg {
+  .form {
+    &__btns {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &__checkbox {
+      padding: 0 30px;
+    }
+  }
+}
+
+@include mobile-lg {
+  .form {
+    &__btn {
+      width: 100%;
+    }
+
+    &__checkbox {
+      padding: 0;
+    }
+  }
+}

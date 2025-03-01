@@ -392,3 +392,23 @@
     display: none;
   }
 }
+
+@include mobile-lg {
+  .cards {
+    @include grid(2);
+  }
+
+  .card:nth-child(3) {
+    display: none;
+  }
+}
+
+@include mobile-sm {
+  .cards {
+    @include grid(1);
+  }
+
+  .card:nth-child(2) {
+    display: none;
+  }
+}

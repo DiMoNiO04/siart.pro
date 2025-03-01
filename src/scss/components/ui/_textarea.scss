@@ -10,7 +10,7 @@
   &__block {
     @include flexCenterBetween;
     border-radius: 12px;
-    background-color: $pageBgColor;
+    background-color: $whiteBlue;
   }
 
   &__textarea {

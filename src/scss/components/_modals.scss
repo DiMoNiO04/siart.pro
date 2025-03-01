@@ -57,7 +57,7 @@
     @include sizes(28px, 28px);
     @include flexCenter;
     border-radius: 50%;
-    background-color: $pageBgColor;
+    background-color: $whiteBlue;
     position: absolute;
     right: -40px;
     top: 0;
@@ -68,11 +68,11 @@
 
     @include hover {
       background-color: $blueHover;
-      box-shadow: $shadowCardBtnHover;
+      box-shadow: $shadowHover;
     }
 
     &:active {
-      box-shadow: $shadowCardBtn;
+      box-shadow: $shadowBtn;
       background-color: $blueActive;
     }
   }

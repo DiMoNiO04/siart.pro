@@ -43,7 +43,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: $shadowCardBtnHover;
+    box-shadow: $shadowHover;
     background-color: $white;
     padding: 4px 10px;
     border-radius: 7px;
@@ -77,7 +77,7 @@
   &__top-btn {
     @include sizes(28px, 28px);
     padding: 6px;
-    box-shadow: $shadowCardBtn;
+    box-shadow: $shadowBtn;
     background-color: $white;
     border-radius: 7px;
     transition:
@@ -86,7 +86,7 @@
 
     &:not(.card__top-btn--active) {
       &:hover {
-        box-shadow: $shadowCardBtnHover;
+        box-shadow: $shadowHover;
 
         svg {
           fill: $blue;
@@ -95,7 +95,7 @@
     }
 
     &--active {
-      box-shadow: $shadowCardBtn;
+      box-shadow: $shadowBtn;
       background-color: $blue;
 
       svg {

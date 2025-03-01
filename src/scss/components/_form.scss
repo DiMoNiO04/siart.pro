@@ -10,4 +10,18 @@
     @include grid(3);
     column-gap: 12px;
   }
+
+  &__textareas {
+    @include flexColumn;
+    row-gap: 12px;
+  }
+
+  &__btns {
+    @include flexCenterStart;
+    column-gap: 20px;
+  }
+
+  &__btn {
+    width: 256px;
+  }
 }

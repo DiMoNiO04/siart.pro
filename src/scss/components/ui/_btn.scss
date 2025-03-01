@@ -48,4 +48,19 @@
       }
     }
   }
+
+  &--blue {
+    background-color: $blue;
+    color: $white;
+
+    &:not(:disabled) {
+      @include hover {
+        background-color: $blueBtnHover;
+      }
+
+      &:active {
+        background-color: $blueBtnActive;
+      }
+    }
+  }
 }

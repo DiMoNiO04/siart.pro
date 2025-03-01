@@ -1,0 +1,37 @@
+@use 'vars' as *;
+@use 'texts' as *;
+
+html {
+  scroll-behavior: smooth;
+  background-color: $white;
+}
+
+body {
+  background-color: $white;
+  color: $textColor;
+  font-family: $fontInter;
+  text-wrap: balance;
+  @include regularInter12;
+}
+
+img {
+  display: block;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $containerPadding;
+  max-width: $containerWidth;
+  width: 100%;
+}

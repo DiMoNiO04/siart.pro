@@ -74,7 +74,7 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type='submit'] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -106,7 +106,7 @@ legend {
   --container-width: 1200px;
   --container-padding: 15px;
   --font-main: sans-serif;
-  --font-accent: "Manrope", sans-serif;
+  --font-accent: 'Manrope', sans-serif;
   --font-titles: var(--font-accent);
   --page-bg: #fff;
   --text-color: #000;

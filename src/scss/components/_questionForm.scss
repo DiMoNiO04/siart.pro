@@ -71,3 +71,11 @@
     }
   }
 }
+
+@include tablet {
+  .questionForm {
+    &__titles-title {
+      @include mediumInter14;
+    }
+  }
+}

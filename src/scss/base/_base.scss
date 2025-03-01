@@ -59,8 +59,14 @@ a {
   }
 }
 
-@include tablet {
+@include laptop {
   .container {
     max-width: 726px;
+  }
+}
+
+@include tablet {
+  .container {
+    max-width: 685px;
   }
 }

@@ -48,3 +48,18 @@
     }
   }
 }
+
+@include tablet {
+  .form {
+    row-gap: 8px;
+
+    &__inputs {
+      @include grid(1);
+      row-gap: 8px;
+    }
+
+    &__btns {
+      margin-top: 8px;
+    }
+  }
+}

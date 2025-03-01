@@ -34,3 +34,21 @@
     }
   }
 }
+
+@include tablet {
+  .section {
+    padding: 24px;
+
+    &__title {
+      @include mediumInter18;
+    }
+
+    &__titles {
+      margin-bottom: 12px;
+    }
+
+    &__navigation {
+      display: none;
+    }
+  }
+}

@@ -382,3 +382,13 @@
     display: none;
   }
 }
+
+@include tablet {
+  .cards {
+    @include grid(3);
+  }
+
+  .card:nth-child(4) {
+    display: none;
+  }
+}

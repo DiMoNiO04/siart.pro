@@ -54,10 +54,10 @@
 
   &__text {
     @include regularInter14;
-    color: $placeholder;
+    color: $grey;
 
     a {
-      color: $placeholder;
+      color: $grey;
       border-bottom: 1px solid;
       transition:
         border-color 0.2s ease-in,

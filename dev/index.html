@@ -365,13 +365,13 @@
             </div>
             <form action="" class="questionForm__form form">
               <div class="form__inputs">
-                <div class="input input--error">
+                <div class="input">
                   <div class="input__block">
                     <input type="text" class="input__input" placeholder="Имя*" />
                     <div class="input__icon">
                       <button class="input__icon-reset" type="button" aria-label="Очистить">
-                        <svg class="icon icon--reset">
-                          <use href="./img/svgsprite/sprite.symbol.svg#reset"></use>
+                        <svg class="icon icon--close">
+                          <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
                         </svg>
                       </button>
                       <svg class="input__icon-success icon icon--successInput">
@@ -382,13 +382,13 @@
                   <p class="input__error">Поле обязательно к&#160;заполнению</p>
                   <p class="input__success">Промокод применён</p>
                 </div>
-                <div class="input input--success">
+                <div class="input">
                   <div class="input__block">
                     <input type="tel" class="input__input" placeholder="Телефон*" />
                     <div class="input__icon">
                       <button class="input__icon-reset" type="button" aria-label="Очистить">
-                        <svg class="icon icon--reset">
-                          <use href="./img/svgsprite/sprite.symbol.svg#reset"></use>
+                        <svg class="icon icon--close">
+                          <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
                         </svg>
                       </button>
                       <svg class="input__icon-success icon icon--successInput">
@@ -404,8 +404,8 @@
                     <input type="email" class="input__input" placeholder="E-mail*" />
                     <div class="input__icon">
                       <button class="input__icon-reset" type="button" aria-label="Очистить">
-                        <svg class="icon icon--reset">
-                          <use href="./img/svgsprite/sprite.symbol.svg#reset"></use>
+                        <svg class="icon icon--close">
+                          <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
                         </svg>
                       </button>
                       <svg class="input__icon-success icon icon--successInput">
@@ -423,8 +423,8 @@
                     <textarea class="textarea__textarea" placeholder="Сообщение"></textarea>
                     <div class="textarea__icon">
                       <button class="textarea__icon-reset" type="button" aria-label="Очистить">
-                        <svg class="icon icon--reset">
-                          <use href="./img/svgsprite/sprite.symbol.svg#reset"></use>
+                        <svg class="icon icon--close">
+                          <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
                         </svg>
                       </button>
                       <svg class="textarea__icon-success icon icon--successInput">
@@ -454,6 +454,28 @@
           </div>
         </div>
       </section>
+
+      <div class="modal">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__icon">
+              <img src="./img/icons/thanks.svg" alt="" />
+            </div>
+            <div class="modal__texts">
+              <div class="modal__title">Спасибо!</div>
+              <p class="modal__text">Вопрос отправлен</p>
+            </div>
+            <button type="submit" class="modal__btn btn btn--icon" aria-label="Хорошо">
+              <span>Хорошо :)</span>
+            </button>
+          </div>
+          <button type="button" class="modal__close" aria-label="Закрыть">
+            <svg class="icon icon--close-modal">
+              <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <script src="./js/index.bundle.js"></script>

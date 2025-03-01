@@ -61,7 +61,7 @@
 
   &__top-view-text {
     @include boldManrope12;
-    color: $placeholder;
+    color: $grey;
     flex-shrink: 0;
   }
 
@@ -201,7 +201,7 @@
   &__price-unit,
   &__prices-old {
     @include regularInter14;
-    color: $placeholder;
+    color: $grey;
   }
 
   &__prices-old {

@@ -1,0 +1,79 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+@use '../base/texts' as *;
+
+.modal {
+  display: none !important;
+  background-color: $modalBg;
+  @include flexCenter;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition:
+    opacity 0.2s ease-in,
+    z-index 0.2s ease-in;
+
+  &__inner {
+    @include flexCenter;
+    gap: 12px;
+    position: relative;
+  }
+
+  &__content {
+    @include flexColumn;
+    row-gap: 24px;
+    background-color: $white;
+    box-shadow: $shadowModal;
+    border-radius: 24px;
+    width: 422px;
+    padding: 28px;
+    position: relative;
+  }
+
+  &__icon {
+    margin: 0 auto;
+  }
+
+  &__texts {
+    @include flexColumn;
+    row-gap: 4px;
+    align-items: center;
+  }
+
+  &__title {
+    @include mediumInter20;
+  }
+
+  &__text {
+    @include regularInter14;
+    color: $grey;
+  }
+
+  &__close {
+    @include sizes(28px, 28px);
+    @include flexCenter;
+    border-radius: 50%;
+    background-color: $pageBgColor;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    padding: 6px;
+    transition:
+      box-shadow 0.2s ease-in,
+      background-color 0.2s ease-in;
+
+    @include hover {
+      background-color: $blueHover;
+      box-shadow: $shadowCardBtnHover;
+    }
+
+    &:active {
+      box-shadow: $shadowCardBtn;
+      background-color: $blueActive;
+    }
+  }
+}

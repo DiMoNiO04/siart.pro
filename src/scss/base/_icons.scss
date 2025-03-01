@@ -9,7 +9,8 @@
     stroke 0.2s ease-in-out,
     fill 0.2s ease-in-out;
 
-  &--swiper {
+  &--swiper,
+  &--close-modal {
     stroke: $blue;
   }
 
@@ -33,11 +34,11 @@
   }
 
   &--viewFull {
-    fill: $placeholder;
+    fill: $grey;
   }
 
-  &--reset {
-    stroke: $placeholder;
+  &--close {
+    stroke: $grey;
   }
 
   &--successInput {

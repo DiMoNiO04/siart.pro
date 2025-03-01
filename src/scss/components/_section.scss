@@ -1,0 +1,21 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+@use '../base/texts' as *;
+
+.section {
+  padding: 68px 0;
+  background-color: $white;
+
+  &--blue {
+    background-color: $pageBgColor;
+  }
+
+  &__titles {
+    @include flexCenterBetween;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    @include mediumInter28;
+  }
+}

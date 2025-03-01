@@ -1,0 +1,26 @@
+@use '../../base/vars' as *;
+@use '../../base/mixins' as *;
+
+.swiper-navigation {
+  @include flexCenterBetween;
+  border: 1px solid $borderGrey;
+  border-radius: 100px;
+  width: fit-content;
+  column-gap: 4px;
+
+  &__btn {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease-in-out;
+
+    @include hover {
+      background-color: $blueHover;
+    }
+
+    &:active {
+      background-color: $blueActive;
+    }
+  }
+}

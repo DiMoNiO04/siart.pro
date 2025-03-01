@@ -5,3 +5,9 @@
 @use './base/base';
 @use './base/fontsAutoGen';
 @use './base/texts';
+@use './base/icons';
+
+@use './components/section';
+@use './components/cards';
+
+@use './components/ui/swiper-navigation';

@@ -1,0 +1,164 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+@use '../base/texts' as *;
+
+.cards {
+  column-gap: 20px;
+
+  &--5 {
+    @include grid(5);
+  }
+}
+
+.card {
+  @include flexColumn;
+  row-gap: 12px;
+  box-shadow: $shadowCard;
+  border-radius: 16px;
+  background-color: $white;
+  padding: 12px;
+  position: relative;
+
+  &__top-btns {
+    position: absolute;
+    display: flex;
+    column-gap: 4px;
+    right: 16px;
+    top: 12px;
+    z-index: 2;
+  }
+
+  &__top-btn {
+    @include sizes(28px, 28px);
+    padding: 6px;
+    box-shadow: $shadowCardBtn;
+    background-color: $white;
+    border-radius: 7px;
+    transition:
+      box-shadow 0.2s ease-in-out,
+      background-color 0.2s ease-in-out;
+
+    &:not(.card__top-btn--active) {
+      &:hover {
+        box-shadow: $shadowCardBtnHover;
+
+        svg {
+          fill: $blue;
+        }
+      }
+    }
+
+    &--active {
+      box-shadow: $shadowCardBtn;
+      background-color: $blue;
+
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &__top-info {
+    @include flexCenterBetween;
+  }
+
+  &__top-art {
+    @include regularManrope12;
+    padding: 4px 6px;
+  }
+
+  &__top-comment {
+    @include flexCenter;
+    column-gap: 4px;
+    padding: 4px;
+  }
+
+  &__top-comment-count {
+    @include regularManrope12;
+  }
+
+  &__top-comment-icon {
+    @include sizes(14px, 14px);
+  }
+
+  &__bottom {
+    @include flexColumn;
+    row-gap: 20px;
+  }
+
+  &__bottom-top {
+    @include flexColumn;
+    row-gap: 12px;
+    justify-content: space-between;
+  }
+
+  &__bottom-title {
+    @include regularInter16;
+    @include croppingText(3);
+    height: 72px;
+  }
+
+  &__bottom-items {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+
+  &__bottom-status {
+    @include boldManrope12;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: $white;
+
+    &--no-stock {
+      color: $error;
+      background-color: $errorSec;
+    }
+
+    &--new {
+      background-color: $blue;
+    }
+
+    &--percent {
+      background-color: $yellow;
+    }
+
+    &--sale {
+      background-color: $green;
+    }
+
+    &--in-stock {
+      color: $green;
+      background-color: $greenSec;
+    }
+
+    &--hit {
+      background-color: $hit;
+    }
+  }
+
+  &__prices {
+    @include flexEndStart;
+    column-gap: 12px;
+  }
+
+  &__prices-actual {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 4px;
+  }
+
+  &__price {
+    @include semiboldInter20;
+  }
+
+  &__price-unit,
+  &__prices-old {
+    @include regularInter14;
+    color: $placeholder;
+  }
+
+  &__prices-old {
+    text-decoration: line-through;
+  }
+}

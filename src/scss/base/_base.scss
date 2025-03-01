@@ -58,3 +58,9 @@ a {
     max-width: 982px;
   }
 }
+
+@include tablet {
+  .container {
+    max-width: 726px;
+  }
+}

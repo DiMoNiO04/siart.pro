@@ -372,3 +372,13 @@
     }
   }
 }
+
+@include laptop {
+  .cards {
+    @include grid(4);
+  }
+
+  .card:nth-child(5) {
+    display: none;
+  }
+}

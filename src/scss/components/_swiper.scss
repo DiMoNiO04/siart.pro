@@ -1,0 +1,29 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+
+.pagination__bullets {
+  display: flex;
+  column-gap: 8px;
+  margin: 0 auto;
+
+  .swiper-pagination-bullet {
+    @include sizes(6px, 6px);
+  }
+
+  &.swiper-pagination-bullets.swiper-pagination-horizontal {
+    width: fit-content;
+  }
+
+  &.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: $bgBullet;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: $blue;
+}

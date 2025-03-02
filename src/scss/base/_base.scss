@@ -3,6 +3,11 @@
 @use 'breakpoints' as *;
 
 html {
+  -webkit-animation: bugfix infinite 1s;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scrollbar-gutter: auto;
   scroll-behavior: smooth;
   background-color: $white;
 }
@@ -12,6 +17,10 @@ body {
   color: $textColor;
   text-wrap: balance;
   @include regularInter12;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -36,6 +45,20 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1690px;
+  max-width: 1700px;
   width: 100%;
+}
+
+@include desktop-xl {
+  .container {
+    padding: 0 36px;
+    max-width: 1256px;
+  }
+}
+
+@include tablet {
+  .container {
+    padding: 0 20px;
+    max-width: 695px;
+  }
 }

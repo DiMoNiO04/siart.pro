@@ -3,14 +3,6 @@
 @use '../base/texts' as *;
 @use '../base/breakpoints' as *;
 
-.cards {
-  column-gap: 20px;
-
-  &--5 {
-    @include grid(5);
-  }
-}
-
 .card {
   @include flexColumn;
   row-gap: 12px;
@@ -19,12 +11,13 @@
   background-color: $white;
   padding: 12px;
   position: relative;
-  transition: transform 0.2s ease-in;
-  will-change: transform;
+  transition: box-shadow 0.2s ease-in;
 
   @include hover {
-    transform: scale(1.03);
+    box-shadow: $shadowHover;
+  }
 
+  @include hover {
     .card__top-view {
       opacity: 100;
       z-index: 2;
@@ -85,7 +78,7 @@
       box-shadow 0.2s ease-in-out,
       background-color 0.2s ease-in-out;
 
-    &:not(.card__top-btn--active) {
+    &:not(.--active) {
       &:hover {
         box-shadow: $shadowHover;
 
@@ -95,7 +88,7 @@
       }
     }
 
-    &--active {
+    &.--active {
       box-shadow: $shadowBtn;
       background-color: $blue;
 
@@ -117,7 +110,12 @@
     @include regularManrope12;
     padding: 4px 6px;
     background-color: $white;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__top-img img {
+    object-fit: cover;
   }
 
   &__top-comment {
@@ -215,6 +213,20 @@
     text-decoration: line-through;
   }
 
+  &__btns {
+    .js-card-cart,
+    .js-card-counts {
+      display: none;
+    }
+
+    .js-card-cart,
+    .js-card-counts {
+      &.--active {
+        display: flex;
+      }
+    }
+  }
+
   &__btns-counts {
     @include sizes(100%, 48px);
     @include flexCenterBetween;
@@ -254,10 +266,6 @@
 }
 
 @include desktop-xl {
-  .cards {
-    column-gap: 16px;
-  }
-
   .card {
     border-radius: 12px;
     row-gap: 8px;
@@ -320,10 +328,6 @@
 }
 
 @include desktop {
-  .cards {
-    column-gap: 8px;
-  }
-
   .card {
     padding: 8px;
 
@@ -370,45 +374,5 @@
     &__prices-old {
       line-height: 16px;
     }
-  }
-}
-
-@include laptop {
-  .cards {
-    @include grid(4);
-  }
-
-  .card:nth-child(5) {
-    display: none;
-  }
-}
-
-@include tablet {
-  .cards {
-    @include grid(3);
-  }
-
-  .card:nth-child(4) {
-    display: none;
-  }
-}
-
-@include mobile-lg {
-  .cards {
-    @include grid(2);
-  }
-
-  .card:nth-child(3) {
-    display: none;
-  }
-}
-
-@include mobile-sm {
-  .cards {
-    @include grid(1);
-  }
-
-  .card:nth-child(2) {
-    display: none;
   }
 }

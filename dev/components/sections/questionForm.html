@@ -10,77 +10,57 @@
           <p class="questionForm__titles-text">Напишите нам, и&#160;мы&#160;предоставим необходимую информацию.</p>
         </div>
       </div>
-      <form action="" class="questionForm__form form">
+      <form class="questionForm__form form js-form">
         <div class="form__inputs">
           <div class="input">
             <div class="input__block">
-              <input type="text" class="input__input" placeholder="Имя*" />
+              <input type="text" name="name" class="input__input" placeholder="Имя*" autocomplete="off" />
               <div class="input__icon">
-                <button class="input__icon-reset" type="button" aria-label="Очистить">
-                  <svg class="icon icon--close">
-                    <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
                 <svg class="input__icon-success icon icon--successInput">
                   <use href="./img/svgsprite/sprite.symbol.svg#successInput"></use>
                 </svg>
               </div>
             </div>
-            <p class="input__error">Поле обязательно к&#160;заполнению</p>
-            <p class="input__success">Промокод применён</p>
-          </div>
-          <div class="input input--error">
-            <div class="input__block">
-              <input type="tel" class="input__input" placeholder="Телефон*" />
-              <div class="input__icon">
-                <button class="input__icon-reset" type="button" aria-label="Очистить">
-                  <svg class="icon icon--close">
-                    <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-                <svg class="input__icon-success icon icon--successInput">
-                  <use href="./img/svgsprite/sprite.symbol.svg#successInput"></use>
-                </svg>
-              </div>
-            </div>
-            <p class="input__error">Поле обязательно к&#160;заполнению</p>
-            <p class="input__success">Промокод применён</p>
+            <p class="input__error"></p>
+            <p class="input__success"></p>
           </div>
           <div class="input">
             <div class="input__block">
-              <input type="email" class="input__input" placeholder="E-mail*" />
+              <input type="tel" name="phone" class="input__input" placeholder="Телефон*" autocomplete="off" />
               <div class="input__icon">
-                <button class="input__icon-reset" type="button" aria-label="Очистить">
-                  <svg class="icon icon--close">
-                    <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
                 <svg class="input__icon-success icon icon--successInput">
                   <use href="./img/svgsprite/sprite.symbol.svg#successInput"></use>
                 </svg>
               </div>
             </div>
-            <p class="input__error">Поле обязательно к&#160;заполнению</p>
-            <p class="input__success">Промокод применён</p>
+            <p class="input__error"></p>
+            <p class="input__success"></p>
+          </div>
+          <div class="input">
+            <div class="input__block">
+              <input type="email" name="email" class="input__input" placeholder="E-mail*" autocomplete="off" />
+              <div class="input__icon">
+                <svg class="input__icon-success icon icon--successInput">
+                  <use href="./img/svgsprite/sprite.symbol.svg#successInput"></use>
+                </svg>
+              </div>
+            </div>
+            <p class="input__error"></p>
+            <p class="input__success"></p>
           </div>
         </div>
         <div class="form__textareas">
           <div class="textarea">
             <div class="textarea__block">
-              <textarea class="textarea__textarea" placeholder="Сообщение"></textarea>
+              <textarea class="textarea__textarea" name="comment" placeholder="Сообщение" autocomplete="off"></textarea>
               <div class="textarea__icon">
-                <button class="textarea__icon-reset" type="button" aria-label="Очистить">
-                  <svg class="icon icon--close">
-                    <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
                 <svg class="textarea__icon-success icon icon--successInput">
                   <use href="./img/svgsprite/sprite.symbol.svg#successInput"></use>
                 </svg>
               </div>
             </div>
-            <p class="textarea__error">Поле обязательно к&#160;заполнению</p>
-            <p class="textarea__success">Промокод применён</p>
+            <p class="textarea__error"></p>
+            <p class="textarea__success"></p>
           </div>
         </div>
         <div class="form__btns">
@@ -88,13 +68,14 @@
             <span>Задать вопрос</span>
           </button>
           <div class="form__checkbox checkbox">
-            <input type="checkbox" class="checkbox__input" id="agree" />
+            <input type="checkbox" class="checkbox__input" id="agree" name="agree" />
             <label for="agree" class="checkbox__label">
               <div class="checkbox__text">
                 Я&#160;согласен с&#160;условиями
                 <a href="#" class="checkbox__text-link">пользовательского соглашения</a>.
               </div>
             </label>
+            <p class="checkbox__error"></p>
           </div>
         </div>
       </form>

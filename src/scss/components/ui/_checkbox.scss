@@ -4,11 +4,25 @@
 @use '../../base/breakpoints' as *;
 
 .checkbox {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  @include flexColumn;
+  gap: 2px;
   cursor: pointer;
   position: relative;
+
+  &__error {
+    color: $error;
+    display: none;
+  }
+
+  &.--error {
+    .checkbox__label::before {
+      background-color: $errorSec;
+    }
+
+    .checkbox__error {
+      display: block;
+    }
+  }
 
   &__input {
     display: none;
@@ -49,7 +63,7 @@
     }
   }
 
-  &--error &__label::before {
+  &.--error &__label::before {
     background-color: $errorSec;
   }
 
@@ -76,6 +90,10 @@
   .checkbox {
     &__text {
       @include regularInter12;
+    }
+
+    &__error {
+      @include regularManrope10;
     }
   }
 }

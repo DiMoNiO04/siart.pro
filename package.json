@@ -62,7 +62,7 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "swiper": "^11.0.6"
+    "swiper": "^11.2.4"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [

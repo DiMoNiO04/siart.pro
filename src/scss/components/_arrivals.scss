@@ -1,0 +1,42 @@
+@use '../base/vars' as *;
+@use '../base/mixins' as *;
+@use '../base/texts' as *;
+@use '../base/breakpoints' as *;
+
+.arrivals {
+  padding-bottom: 0;
+
+  &__titles {
+    margin: 0;
+  }
+
+  &__swiper {
+    padding: 24px 0 68px;
+  }
+
+  &__bullets {
+    display: none;
+  }
+}
+
+@include desktop-xl {
+  .arrivals {
+    &__swiper {
+      padding: 20px 0 48px;
+    }
+  }
+}
+
+@include tablet {
+  .arrivals {
+    padding-bottom: 24px;
+
+    &__bullets {
+      display: flex;
+    }
+
+    &__swiper {
+      padding: 12px 0;
+    }
+  }
+}

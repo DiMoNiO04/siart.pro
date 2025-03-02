@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
-function initArrivalsSlider() {
+const initArrivalsSlider = () => {
   const slider = document.querySelector('.arrivals__swiper');
   const btnPrev = document.querySelector('.swiper-navigation__arrivals--prev');
   const btnNext = document.querySelector('.swiper-navigation__arrivals--next');
@@ -48,10 +48,10 @@ function initArrivalsSlider() {
       },
     },
   });
-}
+};
 
-function initSliders() {
+const initSliders = () => {
   initArrivalsSlider();
-}
+};
 
 window.addEventListener('DOMContentLoaded', initSliders);

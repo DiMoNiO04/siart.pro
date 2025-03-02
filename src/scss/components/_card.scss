@@ -110,7 +110,8 @@
     @include regularManrope12;
     padding: 4px 6px;
     background-color: $white;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 
   &__top-img img {
@@ -210,6 +211,20 @@
 
   &__prices-old {
     text-decoration: line-through;
+  }
+
+  &__btns {
+    .js-card-cart,
+    .js-card-counts {
+      display: none;
+    }
+
+    .js-card-cart,
+    .js-card-counts {
+      &.--active {
+        display: flex;
+      }
+    }
   }
 
   &__btns-counts {

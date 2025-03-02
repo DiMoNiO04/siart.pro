@@ -1,3 +1,5 @@
+@use '../../node_modules/swiper/swiper-bundle.min';
+
 @use './base/reset';
 @use './base/vars';
 @use './base/breakpoints';
@@ -14,7 +16,9 @@
 @use './components/ui/checkbox';
 
 @use './components/section';
-@use './components/cards';
+@use './components/card';
 @use './components/questionForm';
 @use './components/form';
 @use './components/modals';
+@use './components/swiper';
+@use './components/arrivals';

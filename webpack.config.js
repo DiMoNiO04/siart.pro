@@ -1,11 +1,12 @@
 const config = {
-  mode: 'production',
+  mode: process.env.NODE_ENV || 'development',
   entry: {
     index: './src/js/index.js',
   },
   output: {
     filename: '[name].bundle.js',
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {

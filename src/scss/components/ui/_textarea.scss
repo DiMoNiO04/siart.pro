@@ -24,7 +24,7 @@
     border-radius: 12px;
     line-height: 20px;
 
-    .textarea:not(.textarea--error):not(.textarea--success) & {
+    .textarea:not(.--error):not(.--success) & {
       @include hover {
         background-color: $inputHover;
       }
@@ -58,7 +58,7 @@
     color: $green;
   }
 
-  &--error {
+  &.--error {
     .textarea__textarea {
       background-color: $errorSec;
     }
@@ -68,7 +68,7 @@
     }
   }
 
-  &--success {
+  &.--success {
     .textarea__textarea {
       background-color: $greenSec;
     }

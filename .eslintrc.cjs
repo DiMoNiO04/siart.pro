@@ -11,5 +11,6 @@ module.exports = {
   },
   rules: {
     'no-new': 'off',
+    'no-param-reassign': 'off',
   },
 };

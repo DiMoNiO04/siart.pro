@@ -54,6 +54,10 @@
     background-color: $blue;
     color: $white;
 
+    span {
+      @include regularInter16;
+    }
+
     &:not(:disabled) {
       @include hover {
         background-color: $blueBtnHover;
@@ -71,5 +75,11 @@
     height: 36px;
     border-radius: 8px;
     padding: 8px;
+
+    &--blue {
+      span {
+        @include regularInter14;
+      }
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { showModal } from './modal';
 import { validateName, validateEmail, validatePhone, validateComment, validateCheckbox } from './validations';
 
 const SUCCESS_MESSAGES = {
@@ -13,6 +14,7 @@ const inputEmail = form.querySelector('[name="email"]');
 const inputPhone = form.querySelector('[name="phone"]');
 const inputComment = form.querySelector('[name="comment"]');
 const inputAgree = form.querySelector('[name="agree"]');
+const modalThanks = document.querySelector('[data-modal="success-submit-form"]');
 
 const showError = (input, message) => {
   const inputContainer = input.closest('.input, .textarea, .checkbox');
@@ -78,7 +80,7 @@ const submitForm = (e) => {
   const isAgreeValid = validateInput(inputAgree);
 
   if (isNameValid && isEmailValid && isPhoneValid && isCommentValid && isAgreeValid) {
-    alert('Форма успешно отправлена');
+    showModal(modalThanks);
     clearForm();
   }
 };

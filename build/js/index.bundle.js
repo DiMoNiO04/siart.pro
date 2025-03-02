@@ -1,12 +1,12 @@
 /******/ (function () {
   // webpackBootstrap
-  /******/ 'use strict';
   /******/ var __webpack_modules__ = {
     /***/ './node_modules/swiper/modules/a11y.mjs':
       /*!**********************************************!*\
   !*** ./node_modules/swiper/modules/a11y.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -430,6 +430,7 @@
   !*** ./node_modules/swiper/modules/autoplay.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -751,6 +752,7 @@
   !*** ./node_modules/swiper/modules/controller.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -962,6 +964,7 @@
   !*** ./node_modules/swiper/modules/effect-cards.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1116,6 +1119,7 @@
   !*** ./node_modules/swiper/modules/effect-coverflow.mjs ***!
   \**********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1250,6 +1254,7 @@
   !*** ./node_modules/swiper/modules/effect-creative.mjs ***!
   \*********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1423,6 +1428,7 @@
   !*** ./node_modules/swiper/modules/effect-cube.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1624,6 +1630,7 @@
   !*** ./node_modules/swiper/modules/effect-fade.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1711,6 +1718,7 @@
   !*** ./node_modules/swiper/modules/effect-flip.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1856,6 +1864,7 @@
   !*** ./node_modules/swiper/modules/free-mode.mjs ***!
   \***************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2096,6 +2105,7 @@
   !*** ./node_modules/swiper/modules/grid.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2251,6 +2261,7 @@
   !*** ./node_modules/swiper/modules/hash-navigation.mjs ***!
   \*********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2371,6 +2382,7 @@
   !*** ./node_modules/swiper/modules/history.mjs ***!
   \*************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2545,6 +2557,7 @@
   !*** ./node_modules/swiper/modules/index.mjs ***!
   \***********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ A11y: function () {
@@ -2696,6 +2709,7 @@
   !*** ./node_modules/swiper/modules/keyboard.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2852,6 +2866,7 @@
   !*** ./node_modules/swiper/modules/manipulation.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3041,6 +3056,7 @@
   !*** ./node_modules/swiper/modules/mousewheel.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3476,6 +3492,7 @@
   !*** ./node_modules/swiper/modules/navigation.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3699,6 +3716,7 @@
   !*** ./node_modules/swiper/modules/pagination.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4240,6 +4258,7 @@
   !*** ./node_modules/swiper/modules/parallax.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4366,6 +4385,7 @@
   !*** ./node_modules/swiper/modules/scrollbar.mjs ***!
   \***************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4754,6 +4774,7 @@
   !*** ./node_modules/swiper/modules/thumbs.mjs ***!
   \************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4966,6 +4987,7 @@
   !*** ./node_modules/swiper/modules/virtual.mjs ***!
   \*************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -5337,6 +5359,7 @@
   !*** ./node_modules/swiper/modules/zoom.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -6074,6 +6097,7 @@
   !*** ./node_modules/swiper/shared/classes-to-selector.mjs ***!
   \************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6099,6 +6123,7 @@
   !*** ./node_modules/swiper/shared/create-element-if-not-defined.mjs ***!
   \**********************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6136,6 +6161,7 @@
   !*** ./node_modules/swiper/shared/create-shadow.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6166,6 +6192,7 @@
   !*** ./node_modules/swiper/shared/effect-init.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6242,6 +6269,7 @@
   !*** ./node_modules/swiper/shared/effect-target.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6270,6 +6298,7 @@
   !*** ./node_modules/swiper/shared/effect-virtual-transition-end.mjs ***!
   \**********************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6329,6 +6358,7 @@
   !*** ./node_modules/swiper/shared/ssr-window.esm.mjs ***!
   \*******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ a: function () {
@@ -6495,6 +6525,7 @@
   !*** ./node_modules/swiper/shared/swiper-core.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ S: function () {
@@ -10611,6 +10642,7 @@
   !*** ./node_modules/swiper/shared/utils.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ a: function () {
@@ -11056,6 +11088,7 @@
   !*** ./node_modules/swiper/swiper.mjs ***!
   \****************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ Swiper: function () {
@@ -11084,11 +11117,264 @@
         /***/
       },
 
+    /***/ './src/js/card.js':
+      /*!************************!*\
+  !*** ./src/js/card.js ***!
+  \************************/
+      /***/ function () {
+        const CLASS_COMPARISON_BTN = '.js-toggle-comparison';
+        const CLASS_LIKE_BTN = '.js-toggle-like';
+        const CLASS_QUICK_VIEW = '.js-quick-view-card';
+
+        const BODY = document.body;
+
+        const toggleClickBtn = (buttonClass) => {
+          BODY.addEventListener('click', (e) => {
+            const btn = e.target.closest(buttonClass);
+
+            if (btn) {
+              e.preventDefault();
+              btn.classList.toggle('--active');
+            }
+          });
+        };
+
+        const quickViewCard = () => {
+          BODY.addEventListener('click', (e) => {
+            const btn = e.target.closest(CLASS_QUICK_VIEW);
+
+            if (btn) {
+              e.preventDefault();
+              alert('Быстрый промотр карточки');
+            }
+          });
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+          toggleClickBtn(CLASS_COMPARISON_BTN);
+          toggleClickBtn(CLASS_LIKE_BTN);
+
+          quickViewCard();
+        });
+
+        /***/
+      },
+
+    /***/ './src/js/cart.js':
+      /*!************************!*\
+  !*** ./src/js/cart.js ***!
+  \************************/
+      /***/ function () {
+        const handleCart = () => {
+          const cards = document.querySelectorAll('.js-card');
+
+          cards.forEach((card) => {
+            const cartButton = card.querySelector('.js-card-cart');
+            const countSection = card.querySelector('.js-card-counts');
+            const countIncrease = card.querySelector('.js-card-counts-increase');
+            const countDecrease = card.querySelector('.js-card-counts-decrease');
+            const countDisplay = card.querySelector('.js-card-count');
+
+            const updateCart = (isIncrease) => {
+              const currentCount = parseInt(countDisplay.textContent, 10);
+              const newCount = isIncrease ? currentCount + 1 : currentCount - 1;
+
+              if (newCount >= 1) {
+                countDisplay.textContent = newCount;
+                const action = isIncrease ? 'добавлен' : 'удален';
+                alert(`Товар ${action} в корзину\nКоличество: ${newCount}`);
+              } else {
+                countSection.classList.remove('--active');
+                cartButton.classList.add('--active');
+                alert('Товар удален из корзины');
+              }
+            };
+
+            cartButton.addEventListener('click', (e) => {
+              e.preventDefault();
+              cartButton.classList.remove('--active');
+              countSection.classList.add('--active');
+              countDisplay.textContent = 1;
+              alert('Товар добавлен в корзину\nКоличество: 1');
+            });
+
+            countIncrease.addEventListener('click', (e) => {
+              e.preventDefault();
+              updateCart(true);
+            });
+
+            countDecrease.addEventListener('click', (e) => {
+              e.preventDefault();
+              updateCart(false);
+            });
+          });
+        };
+
+        document.addEventListener('DOMContentLoaded', handleCart);
+
+        /***/
+      },
+
+    /***/ './src/js/form.js':
+      /*!************************!*\
+  !*** ./src/js/form.js ***!
+  \************************/
+      /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
+        __webpack_require__.r(__webpack_exports__);
+        /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+          /*! ./modal */ './src/js/modal.js'
+        );
+        /* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+          /*! ./validations */ './src/js/validations.js'
+        );
+
+        const SUCCESS_MESSAGES = {
+          nameValid: 'Имя введено правильно',
+          emailValid: 'Email введен корректно',
+          phoneValid: 'Телефон введен корректно',
+          commentValid: 'Комментарий введен корректно',
+        };
+
+        const form = document.querySelector('.js-form');
+        const inputName = form.querySelector('[name="name"]');
+        const inputEmail = form.querySelector('[name="email"]');
+        const inputPhone = form.querySelector('[name="phone"]');
+        const inputComment = form.querySelector('[name="comment"]');
+        const inputAgree = form.querySelector('[name="agree"]');
+        const modalThanks = document.querySelector('[data-modal="success-submit-form"]');
+
+        const showError = (input, message) => {
+          const inputContainer = input.closest('.input, .textarea, .checkbox');
+          inputContainer.classList.add('--error');
+          inputContainer.classList.remove('--success');
+          const errorMessage = inputContainer.querySelector('.input__error, .textarea__error, .checkbox__error');
+          if (errorMessage) errorMessage.textContent = message;
+        };
+
+        const showSuccess = (input, message) => {
+          const inputContainer = input.closest('.input, .textarea, .checkbox');
+          inputContainer.classList.remove('--error');
+          inputContainer.classList.add('--success');
+          const successMessage = inputContainer.querySelector(
+            '.input__success, .textarea__success, .checkbox__success'
+          );
+          if (successMessage) successMessage.textContent = message;
+        };
+
+        const validateInput = (input) => {
+          let validationResult;
+
+          if (input.name === 'name') {
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateName)({ target: input });
+          } else if (input.name === 'email') {
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateEmail)({ target: input });
+          } else if (input.name === 'phone') {
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validatePhone)({ target: input });
+          } else if (input.name === 'comment') {
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateComment)({ target: input });
+          } else if (input.name === 'agree') {
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateCheckbox)({ target: input });
+          }
+
+          if (validationResult.isValid) {
+            showSuccess(input, SUCCESS_MESSAGES[`${input.name}Valid`]);
+            return true;
+          }
+          showError(input, validationResult.message);
+          return false;
+        };
+
+        const clearForm = () => {
+          [inputName, inputEmail, inputPhone, inputComment, inputAgree].forEach((input) => {
+            input.value = '';
+            const inputContainer = input.closest('.input, .textarea, .checkbox');
+            inputContainer.classList.remove('--error', '--success');
+            const errorMessage = inputContainer.querySelector('.input__error, .textarea__error, .checkbox__error');
+            const successMessage = inputContainer.querySelector(
+              '.input__success, .textarea__success, .checkbox__success'
+            );
+
+            if (errorMessage) errorMessage.textContent = '';
+            if (successMessage) successMessage.textContent = '';
+          });
+
+          inputAgree.checked = false;
+        };
+
+        const submitForm = (e) => {
+          e.preventDefault();
+
+          const isNameValid = validateInput(inputName);
+          const isEmailValid = validateInput(inputEmail);
+          const isPhoneValid = validateInput(inputPhone);
+          const isCommentValid = validateInput(inputComment);
+          const isAgreeValid = validateInput(inputAgree);
+
+          if (isNameValid && isEmailValid && isPhoneValid && isCommentValid && isAgreeValid) {
+            (0, _modal__WEBPACK_IMPORTED_MODULE_0__.showModal)(modalThanks);
+            clearForm();
+          }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+          inputName.addEventListener('input', () => validateInput(inputName));
+          inputEmail.addEventListener('input', () => validateInput(inputEmail));
+          inputPhone.addEventListener('input', () => validateInput(inputPhone));
+          inputComment.addEventListener('input', () => validateInput(inputComment));
+          inputAgree.addEventListener('change', () => validateInput(inputAgree));
+
+          form.addEventListener('submit', submitForm);
+        });
+
+        /***/
+      },
+
+    /***/ './src/js/modal.js':
+      /*!*************************!*\
+  !*** ./src/js/modal.js ***!
+  \*************************/
+      /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
+        __webpack_require__.r(__webpack_exports__);
+        /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+          /* harmony export */ closeModal: function () {
+            return /* binding */ closeModal;
+          },
+          /* harmony export */ showModal: function () {
+            return /* binding */ showModal;
+          },
+          /* harmony export */
+        });
+        const closeModalBtns = document.querySelectorAll('.js-close-modal');
+        const { body } = document;
+
+        const showModal = (modal) => {
+          modal.classList.add('--open');
+          body.classList.add('no-scroll');
+        };
+
+        const closeModal = (modal) => {
+          modal.classList.remove('--open');
+          body.classList.remove('no-scroll');
+        };
+
+        closeModalBtns.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            const modal = e.target.closest('.modal');
+            closeModal(modal);
+          });
+        });
+
+        /***/
+      },
+
     /***/ './src/js/swiper.js':
       /*!**************************!*\
   !*** ./src/js/swiper.js ***!
   \**************************/
       /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
           /*! swiper */ './node_modules/swiper/swiper.mjs'
@@ -11097,7 +11383,7 @@
           /*! swiper/modules */ './node_modules/swiper/modules/index.mjs'
         );
 
-        function initArrivalsSlider() {
+        const initArrivalsSlider = () => {
           const slider = document.querySelector('.arrivals__swiper');
           const btnPrev = document.querySelector('.swiper-navigation__arrivals--prev');
           const btnNext = document.querySelector('.swiper-navigation__arrivals--next');
@@ -11113,7 +11399,6 @@
             spaceBetween: 20,
             loop: true,
             observer: true,
-            grabCursor: true,
             slidesPerView: 5,
             navigation: {
               nextEl: btnNext,
@@ -11126,12 +11411,15 @@
             breakpoints: {
               200: {
                 slidesPerView: 1,
+                spaceBetween: 8,
               },
               360: {
                 slidesPerView: 2,
+                spaceBetween: 8,
               },
               600: {
                 slidesPerView: 3,
+                spaceBetween: 8,
               },
               767: {
                 slidesPerView: 4,
@@ -11139,6 +11427,7 @@
               },
               1024: {
                 slidesPerView: 5,
+                spaceBetween: 16,
               },
               1400: {
                 spaceBetween: 16,
@@ -11148,13 +11437,129 @@
               },
             },
           });
-        }
+        };
 
-        function initSliders() {
+        const initSliders = () => {
           initArrivalsSlider();
-        }
+        };
 
         window.addEventListener('DOMContentLoaded', initSliders);
+
+        /***/
+      },
+
+    /***/ './src/js/validations.js':
+      /*!*******************************!*\
+  !*** ./src/js/validations.js ***!
+  \*******************************/
+      /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
+        __webpack_require__.r(__webpack_exports__);
+        /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+          /* harmony export */ validateCheckbox: function () {
+            return /* binding */ validateCheckbox;
+          },
+          /* harmony export */ validateComment: function () {
+            return /* binding */ validateComment;
+          },
+          /* harmony export */ validateEmail: function () {
+            return /* binding */ validateEmail;
+          },
+          /* harmony export */ validateName: function () {
+            return /* binding */ validateName;
+          },
+          /* harmony export */ validatePhone: function () {
+            return /* binding */ validatePhone;
+          },
+          /* harmony export */
+        });
+        const ERROR_MESSAGES = {
+          required: 'Обязательное поле для заполнения',
+          invalidCharacters: 'Поле должно содержать только буквы',
+          invalidEmail: 'Некорректный email',
+          invalidPhone: 'Некорректный номер телефона',
+          requiredCheckbox: 'Необходимо согласие с условиями',
+        };
+
+        const validateName = (e) => {
+          const nameValue = e.target.value.trim();
+          const nameRegex = /^[a-zA-Zа-яА-ЯёЁ\s]+$/;
+
+          let message = '';
+          let isValid = true;
+
+          if (nameValue.length === 0) {
+            message = ERROR_MESSAGES.required;
+            isValid = false;
+          } else if (!nameRegex.test(nameValue)) {
+            message = ERROR_MESSAGES.invalidCharacters;
+            isValid = false;
+          }
+
+          return { message, isValid };
+        };
+
+        const validateEmail = (e) => {
+          const emailValue = e.target.value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          let message = '';
+          let isValid = true;
+
+          if (emailValue.length === 0) {
+            message = ERROR_MESSAGES.required;
+            isValid = false;
+          } else if (!emailRegex.test(emailValue)) {
+            message = ERROR_MESSAGES.invalidEmail;
+            isValid = false;
+          }
+
+          return { message, isValid };
+        };
+
+        const validatePhone = (e) => {
+          const phoneValue = e.target.value.trim();
+          const phoneRegex = /^(?:\+7|7|8)\s?\(?\d{3}\)?\s?\d{3}\s?\d{2}\s?\d{2}$/;
+
+          let message = '';
+          let isValid = true;
+
+          if (phoneValue.length === 0) {
+            message = ERROR_MESSAGES.required;
+            isValid = false;
+          } else if (!phoneRegex.test(phoneValue)) {
+            message = ERROR_MESSAGES.invalidPhone;
+            isValid = false;
+          }
+
+          return { message, isValid };
+        };
+
+        const validateComment = (e) => {
+          const commentValue = e.target.value.trim();
+          let message = '';
+          let isValid = true;
+
+          if (commentValue.length === 0) {
+            message = ERROR_MESSAGES.required;
+            isValid = false;
+          }
+
+          return { message, isValid };
+        };
+
+        const validateCheckbox = (e) => {
+          const isChecked = e.target.checked;
+          let message = '';
+          let isValid = true;
+
+          if (!isChecked) {
+            message = ERROR_MESSAGES.required;
+            isValid = false;
+          }
+
+          return { message, isValid };
+        };
 
         /***/
       },
@@ -11190,6 +11595,25 @@
   }
   /******/
   /************************************************************************/
+  /******/ /* webpack/runtime/compat get default export */
+  /******/ !(function () {
+    /******/ // getDefaultExport function for compatibility with non-harmony modules
+    /******/ __webpack_require__.n = function (module) {
+      /******/ var getter =
+        module && module.__esModule
+          ? /******/ function () {
+              return module['default'];
+            }
+          : /******/ function () {
+              return module;
+            };
+      /******/ __webpack_require__.d(getter, { a: getter });
+      /******/ return getter;
+      /******/
+    };
+    /******/
+  })();
+  /******/
   /******/ /* webpack/runtime/define property getters */
   /******/ !(function () {
     /******/ // define getter functions for harmony exports
@@ -11230,8 +11654,9 @@
   /******/
   /************************************************************************/
   var __webpack_exports__ = {};
-  // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+  // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
   !(function () {
+    'use strict';
     /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
@@ -11239,6 +11664,21 @@
     /* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
       /*! ./swiper */ './src/js/swiper.js'
     );
+    /* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card */ './src/js/card.js');
+    /* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/ __webpack_require__.n(
+      _card__WEBPACK_IMPORTED_MODULE_1__
+    );
+    /* harmony import */ var _cart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./cart */ './src/js/cart.js');
+    /* harmony import */ var _cart__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/ __webpack_require__.n(
+      _cart__WEBPACK_IMPORTED_MODULE_2__
+    );
+    /* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+      /*! ./validations */ './src/js/validations.js'
+    );
+    /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./modal */ './src/js/modal.js'
+    );
+    /* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form */ './src/js/form.js');
   })();
   /******/
 })();

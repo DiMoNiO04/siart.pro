@@ -11222,7 +11222,10 @@
       /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
         'use strict';
         __webpack_require__.r(__webpack_exports__);
-        /* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+        /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+          /*! ./modal */ './src/js/modal.js'
+        );
+        /* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
           /*! ./validations */ './src/js/validations.js'
         );
 
@@ -11239,6 +11242,7 @@
         const inputPhone = form.querySelector('[name="phone"]');
         const inputComment = form.querySelector('[name="comment"]');
         const inputAgree = form.querySelector('[name="agree"]');
+        const modalThanks = document.querySelector('[data-modal="success-submit-form"]');
 
         const showError = (input, message) => {
           const inputContainer = input.closest('.input, .textarea, .checkbox');
@@ -11262,24 +11266,23 @@
           let validationResult;
 
           if (input.name === 'name') {
-            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_0__.validateName)({ target: input });
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateName)({ target: input });
           } else if (input.name === 'email') {
-            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_0__.validateEmail)({ target: input });
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateEmail)({ target: input });
           } else if (input.name === 'phone') {
-            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_0__.validatePhone)({ target: input });
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validatePhone)({ target: input });
           } else if (input.name === 'comment') {
-            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_0__.validateComment)({ target: input });
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateComment)({ target: input });
           } else if (input.name === 'agree') {
-            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_0__.validateCheckbox)({ target: input });
+            validationResult = (0, _validations__WEBPACK_IMPORTED_MODULE_1__.validateCheckbox)({ target: input });
           }
 
           if (validationResult.isValid) {
             showSuccess(input, SUCCESS_MESSAGES[`${input.name}Valid`]);
             return true;
-          } else {
-            showError(input, validationResult.message);
-            return false;
           }
+          showError(input, validationResult.message);
+          return false;
         };
 
         const clearForm = () => {
@@ -11309,7 +11312,7 @@
           const isAgreeValid = validateInput(inputAgree);
 
           if (isNameValid && isEmailValid && isPhoneValid && isCommentValid && isAgreeValid) {
-            alert('Форма успешно отправлена');
+            (0, _modal__WEBPACK_IMPORTED_MODULE_0__.showModal)(modalThanks);
             clearForm();
           }
         };
@@ -11322,6 +11325,45 @@
           inputAgree.addEventListener('change', () => validateInput(inputAgree));
 
           form.addEventListener('submit', submitForm);
+        });
+
+        /***/
+      },
+
+    /***/ './src/js/modal.js':
+      /*!*************************!*\
+  !*** ./src/js/modal.js ***!
+  \*************************/
+      /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
+        __webpack_require__.r(__webpack_exports__);
+        /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+          /* harmony export */ closeModal: function () {
+            return /* binding */ closeModal;
+          },
+          /* harmony export */ showModal: function () {
+            return /* binding */ showModal;
+          },
+          /* harmony export */
+        });
+        const closeModalBtns = document.querySelectorAll('.js-close-modal');
+        const { body } = document;
+
+        const showModal = (modal) => {
+          modal.classList.add('--open');
+          body.classList.add('no-scroll');
+        };
+
+        const closeModal = (modal) => {
+          modal.classList.remove('--open');
+          body.classList.remove('no-scroll');
+        };
+
+        closeModalBtns.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            const modal = e.target.closest('.modal');
+            closeModal(modal);
+          });
         });
 
         /***/
@@ -11369,12 +11411,15 @@
             breakpoints: {
               200: {
                 slidesPerView: 1,
+                spaceBetween: 8,
               },
               360: {
                 slidesPerView: 2,
+                spaceBetween: 8,
               },
               600: {
                 slidesPerView: 3,
+                spaceBetween: 8,
               },
               767: {
                 slidesPerView: 4,
@@ -11382,6 +11427,7 @@
               },
               1024: {
                 slidesPerView: 5,
+                spaceBetween: 16,
               },
               1400: {
                 spaceBetween: 16,
@@ -11473,7 +11519,7 @@
 
         const validatePhone = (e) => {
           const phoneValue = e.target.value.trim();
-          const phoneRegex = /^(?:\+375|375|80)(?:\s?)(29|33|44|25)(?:\s?)(\d{3})(?:\s?)(\d{2})(?:\s?)(\d{2})$/;
+          const phoneRegex = /^(?:\+7|7|8)\s?\(?\d{3}\)?\s?\d{3}\s?\d{2}\s?\d{2}$/;
 
           let message = '';
           let isValid = true;
@@ -11629,7 +11675,10 @@
     /* harmony import */ var _validations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
       /*! ./validations */ './src/js/validations.js'
     );
-    /* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./form */ './src/js/form.js');
+    /* harmony import */ var _modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+      /*! ./modal */ './src/js/modal.js'
+    );
+    /* harmony import */ var _form__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./form */ './src/js/form.js');
   })();
   /******/
 })();

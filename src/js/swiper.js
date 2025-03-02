@@ -26,12 +26,15 @@ const initArrivalsSlider = () => {
     breakpoints: {
       200: {
         slidesPerView: 1,
+        spaceBetween: 8,
       },
       360: {
         slidesPerView: 2,
+        spaceBetween: 8,
       },
       600: {
         slidesPerView: 3,
+        spaceBetween: 8,
       },
       767: {
         slidesPerView: 4,
@@ -39,6 +42,7 @@ const initArrivalsSlider = () => {
       },
       1024: {
         slidesPerView: 5,
+        spaceBetween: 16,
       },
       1400: {
         spaceBetween: 16,

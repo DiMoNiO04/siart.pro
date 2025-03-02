@@ -44,7 +44,7 @@ export const validateEmail = (e) => {
 
 export const validatePhone = (e) => {
   const phoneValue = e.target.value.trim();
-  const phoneRegex = /^(?:\+375|375|80)(?:\s?)(29|33|44|25)(?:\s?)(\d{3})(?:\s?)(\d{2})(?:\s?)(\d{2})$/;
+  const phoneRegex = /^(?:\+7|7|8)\s?\(?\d{3}\)?\s?\d{3}\s?\d{2}\s?\d{2}$/;
 
   let message = '';
   let isValid = true;

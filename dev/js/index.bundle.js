@@ -1,12 +1,12 @@
 /******/ (function () {
   // webpackBootstrap
-  /******/ 'use strict';
   /******/ var __webpack_modules__ = {
     /***/ './node_modules/swiper/modules/a11y.mjs':
       /*!**********************************************!*\
   !*** ./node_modules/swiper/modules/a11y.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -430,6 +430,7 @@
   !*** ./node_modules/swiper/modules/autoplay.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -751,6 +752,7 @@
   !*** ./node_modules/swiper/modules/controller.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -962,6 +964,7 @@
   !*** ./node_modules/swiper/modules/effect-cards.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1116,6 +1119,7 @@
   !*** ./node_modules/swiper/modules/effect-coverflow.mjs ***!
   \**********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1250,6 +1254,7 @@
   !*** ./node_modules/swiper/modules/effect-creative.mjs ***!
   \*********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1423,6 +1428,7 @@
   !*** ./node_modules/swiper/modules/effect-cube.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1624,6 +1630,7 @@
   !*** ./node_modules/swiper/modules/effect-fade.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1711,6 +1718,7 @@
   !*** ./node_modules/swiper/modules/effect-flip.mjs ***!
   \*****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -1856,6 +1864,7 @@
   !*** ./node_modules/swiper/modules/free-mode.mjs ***!
   \***************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2096,6 +2105,7 @@
   !*** ./node_modules/swiper/modules/grid.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2251,6 +2261,7 @@
   !*** ./node_modules/swiper/modules/hash-navigation.mjs ***!
   \*********************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2371,6 +2382,7 @@
   !*** ./node_modules/swiper/modules/history.mjs ***!
   \*************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2545,6 +2557,7 @@
   !*** ./node_modules/swiper/modules/index.mjs ***!
   \***********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ A11y: function () {
@@ -2696,6 +2709,7 @@
   !*** ./node_modules/swiper/modules/keyboard.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -2852,6 +2866,7 @@
   !*** ./node_modules/swiper/modules/manipulation.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3041,6 +3056,7 @@
   !*** ./node_modules/swiper/modules/mousewheel.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3476,6 +3492,7 @@
   !*** ./node_modules/swiper/modules/navigation.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -3699,6 +3716,7 @@
   !*** ./node_modules/swiper/modules/pagination.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4240,6 +4258,7 @@
   !*** ./node_modules/swiper/modules/parallax.mjs ***!
   \**************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4366,6 +4385,7 @@
   !*** ./node_modules/swiper/modules/scrollbar.mjs ***!
   \***************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4754,6 +4774,7 @@
   !*** ./node_modules/swiper/modules/thumbs.mjs ***!
   \************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -4966,6 +4987,7 @@
   !*** ./node_modules/swiper/modules/virtual.mjs ***!
   \*************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -5337,6 +5359,7 @@
   !*** ./node_modules/swiper/modules/zoom.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ default: function () {
@@ -6074,6 +6097,7 @@
   !*** ./node_modules/swiper/shared/classes-to-selector.mjs ***!
   \************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6099,6 +6123,7 @@
   !*** ./node_modules/swiper/shared/create-element-if-not-defined.mjs ***!
   \**********************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6136,6 +6161,7 @@
   !*** ./node_modules/swiper/shared/create-shadow.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ c: function () {
@@ -6166,6 +6192,7 @@
   !*** ./node_modules/swiper/shared/effect-init.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6242,6 +6269,7 @@
   !*** ./node_modules/swiper/shared/effect-target.mjs ***!
   \******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6270,6 +6298,7 @@
   !*** ./node_modules/swiper/shared/effect-virtual-transition-end.mjs ***!
   \**********************************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ e: function () {
@@ -6329,6 +6358,7 @@
   !*** ./node_modules/swiper/shared/ssr-window.esm.mjs ***!
   \*******************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ a: function () {
@@ -6495,6 +6525,7 @@
   !*** ./node_modules/swiper/shared/swiper-core.mjs ***!
   \****************************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ S: function () {
@@ -10611,6 +10642,7 @@
   !*** ./node_modules/swiper/shared/utils.mjs ***!
   \**********************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ a: function () {
@@ -11056,6 +11088,7 @@
   !*** ./node_modules/swiper/swiper.mjs ***!
   \****************************************/
       /***/ function (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony export */ __webpack_require__.d(__webpack_exports__, {
           /* harmony export */ Swiper: function () {
@@ -11084,11 +11117,55 @@
         /***/
       },
 
+    /***/ './src/js/card.js':
+      /*!************************!*\
+  !*** ./src/js/card.js ***!
+  \************************/
+      /***/ function () {
+        const CLASS_COMPARISON_BTN = '.js-toggle-comparison';
+        const CLASS_LIKE_BTN = '.js-toggle-like';
+        const CLASS_QUICK_VIEW = '.js-quick-view-card';
+
+        const BODY = document.body;
+
+        const toggleClickBtn = (buttonClass) => {
+          BODY.addEventListener('click', (e) => {
+            const btn = e.target.closest(buttonClass);
+
+            if (btn) {
+              e.preventDefault();
+              btn.classList.toggle('--active');
+            }
+          });
+        };
+
+        const quickViewCard = () => {
+          BODY.addEventListener('click', (e) => {
+            const btn = e.target.closest(CLASS_QUICK_VIEW);
+
+            if (btn) {
+              e.preventDefault();
+              alert('Быстрый промотр карточки');
+            }
+          });
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+          toggleClickBtn(CLASS_COMPARISON_BTN);
+          toggleClickBtn(CLASS_LIKE_BTN);
+
+          quickViewCard();
+        });
+
+        /***/
+      },
+
     /***/ './src/js/swiper.js':
       /*!**************************!*\
   !*** ./src/js/swiper.js ***!
   \**************************/
       /***/ function (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+        'use strict';
         __webpack_require__.r(__webpack_exports__);
         /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
           /*! swiper */ './node_modules/swiper/swiper.mjs'
@@ -11113,7 +11190,6 @@
             spaceBetween: 20,
             loop: true,
             observer: true,
-            grabCursor: true,
             slidesPerView: 5,
             navigation: {
               nextEl: btnNext,
@@ -11190,6 +11266,25 @@
   }
   /******/
   /************************************************************************/
+  /******/ /* webpack/runtime/compat get default export */
+  /******/ !(function () {
+    /******/ // getDefaultExport function for compatibility with non-harmony modules
+    /******/ __webpack_require__.n = function (module) {
+      /******/ var getter =
+        module && module.__esModule
+          ? /******/ function () {
+              return module['default'];
+            }
+          : /******/ function () {
+              return module;
+            };
+      /******/ __webpack_require__.d(getter, { a: getter });
+      /******/ return getter;
+      /******/
+    };
+    /******/
+  })();
+  /******/
   /******/ /* webpack/runtime/define property getters */
   /******/ !(function () {
     /******/ // define getter functions for harmony exports
@@ -11230,14 +11325,19 @@
   /******/
   /************************************************************************/
   var __webpack_exports__ = {};
-  // This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+  // This entry needs to be wrapped in an IIFE because it needs to be in strict mode.
   !(function () {
+    'use strict';
     /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
     __webpack_require__.r(__webpack_exports__);
-    /* harmony import */ var _swiper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-      /*! ./swiper.js */ './src/js/swiper.js'
+    /* harmony import */ var _swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! ./swiper */ './src/js/swiper.js'
+    );
+    /* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./card */ './src/js/card.js');
+    /* harmony import */ var _card__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/ __webpack_require__.n(
+      _card__WEBPACK_IMPORTED_MODULE_1__
     );
   })();
   /******/

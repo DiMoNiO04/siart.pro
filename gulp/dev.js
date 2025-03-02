@@ -7,7 +7,6 @@ const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
 const webpack = require('webpack-stream');
-const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const changed = require('gulp-changed');
 const typograf = require('gulp-typograf');
@@ -138,7 +137,6 @@ gulp.task('js:dev', function () {
   return gulp
     .src('./src/js/*.js')
     .pipe(changed('./dev/js/'))
-    .pipe(babel())
     .pipe(webpack(require('../webpack.config.js')))
     .pipe(gulp.dest('./dev/js/'));
 });

@@ -11,6 +11,7 @@
   background-color: $white;
   padding: 12px;
   position: relative;
+  transition: box-shadow 0.2s ease-in;
 
   @include hover {
     box-shadow: $shadowHover;
@@ -77,7 +78,7 @@
       box-shadow 0.2s ease-in-out,
       background-color 0.2s ease-in-out;
 
-    &:not(.card__top-btn--active) {
+    &:not(.--active) {
       &:hover {
         box-shadow: $shadowHover;
 
@@ -87,7 +88,7 @@
       }
     }
 
-    &--active {
+    &.--active {
       box-shadow: $shadowBtn;
       background-color: $blue;
 

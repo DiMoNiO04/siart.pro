@@ -14,7 +14,6 @@ function initArrivalsSlider() {
     spaceBetween: 20,
     loop: true,
     observer: true,
-    grabCursor: true,
     slidesPerView: 5,
     navigation: {
       nextEl: btnNext,

@@ -1,5 +1,6 @@
 @use 'vars' as *;
 @use 'texts' as *;
+@use 'breakpoints' as *;
 
 html {
   scroll-behavior: smooth;
@@ -34,7 +35,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 $containerPadding;
-  max-width: $containerWidth;
+  padding: 0 20px;
+  max-width: 1690px;
   width: 100%;
 }

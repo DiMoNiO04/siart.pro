@@ -1,6 +1,7 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .form {
   @include flexColumn;
@@ -23,5 +24,67 @@
 
   &__btn {
     width: 256px;
+  }
+}
+
+@include desktop-xl {
+  .form {
+    row-gap: 12px;
+
+    &__btns {
+      margin-top: 4px;
+    }
+
+    &__btn {
+      width: 224px;
+    }
+  }
+}
+
+@include desktop {
+  .form {
+    &__btn {
+      width: 200px;
+    }
+  }
+}
+
+@include tablet {
+  .form {
+    row-gap: 8px;
+
+    &__inputs {
+      @include grid(1);
+      row-gap: 8px;
+    }
+
+    &__btns {
+      margin-top: 8px;
+    }
+  }
+}
+
+@include mobile-lg {
+  .form {
+    &__btns {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &__checkbox {
+      padding: 0 30px;
+    }
+  }
+}
+
+@include mobile-lg {
+  .form {
+    &__btn {
+      width: 100%;
+    }
+
+    &__checkbox {
+      padding: 0;
+    }
   }
 }

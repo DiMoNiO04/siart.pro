@@ -1,4 +1,4 @@
-@use 'vars';
+@use 'vars' as *;
 
 @mixin desktop-xl() {
   @media (max-width: $desktopXL) {

@@ -1,6 +1,7 @@
 @use '../../base/mixins' as *;
 @use '../../base/vars' as *;
 @use '../../base/texts' as *;
+@use '../../base/breakpoints' as *;
 
 .checkbox {
   display: flex;
@@ -67,6 +68,22 @@
         border-color: transparent;
         color: $textColor;
       }
+    }
+  }
+}
+
+@include desktop-xl {
+  .checkbox {
+    &__text {
+      @include regularInter12;
+    }
+  }
+}
+
+@include mobile-lg {
+  .checkbox {
+    &__text {
+      line-height: 16px;
     }
   }
 }

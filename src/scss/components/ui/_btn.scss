@@ -1,6 +1,7 @@
 @use '../../base/mixins' as *;
 @use '../../base/vars' as *;
 @use '../../base/texts' as *;
+@use '../../base/breakpoints' as *;
 
 .btn {
   @include sizes(100%, 52px);
@@ -62,5 +63,13 @@
         background-color: $blueBtnActive;
       }
     }
+  }
+}
+
+@include desktop-xl {
+  .btn {
+    height: 36px;
+    border-radius: 8px;
+    padding: 8px;
   }
 }

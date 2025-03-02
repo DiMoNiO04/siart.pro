@@ -1,6 +1,7 @@
 @use '../base/vars' as *;
 @use '../base/mixins' as *;
 @use '../base/texts' as *;
+@use '../base/breakpoints' as *;
 
 .questionForm {
   @include flexColumn;
@@ -10,7 +11,8 @@
   border-radius: 24px;
 
   &__icon {
-    @include sizes(64px, 64px);
+    @include sizes(60px, 60px);
+    flex-shrink: 0;
   }
 
   &__titles {
@@ -30,5 +32,63 @@
   &__titles-text {
     @include regularInter16;
     color: $grey;
+  }
+}
+
+@include desktop-xl {
+  .questionForm {
+    padding: 16px 24px;
+    row-gap: 16px;
+
+    &__icon {
+      @include sizes(48px, 48px);
+    }
+
+    &__titles-title {
+      @include mediumInter16;
+    }
+
+    &__titles-text {
+      @include regularInter14;
+    }
+  }
+}
+
+@include desktop {
+  .questionForm {
+    padding: 16px;
+    row-gap: 28px;
+
+    &__icon {
+      @include sizes(36px, 36px);
+    }
+
+    &__titles {
+      column-gap: 12px;
+    }
+
+    &__titles-texts {
+      row-gap: 0;
+    }
+  }
+}
+
+@include tablet {
+  .questionForm {
+    &__titles-title {
+      @include mediumInter14;
+    }
+  }
+}
+
+@include mobile-lg {
+  .questionForm {
+    &__icon {
+      @include sizes(36px, 40px);
+    }
+
+    &__titles {
+      align-items: flex-start;
+    }
   }
 }

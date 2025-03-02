@@ -1,0 +1,64 @@
+@use 'vars' as *;
+@use 'texts' as *;
+@use 'breakpoints' as *;
+
+html {
+  -webkit-animation: bugfix infinite 1s;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scrollbar-gutter: auto;
+  scroll-behavior: smooth;
+  background-color: $white;
+}
+
+body {
+  background-color: $white;
+  color: $textColor;
+  text-wrap: balance;
+  @include regularInter12;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+img {
+  display: block;
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: $textColor;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1700px;
+  width: 100%;
+}
+
+@include desktop-xl {
+  .container {
+    padding: 0 36px;
+    max-width: 1256px;
+  }
+}
+
+@include tablet {
+  .container {
+    padding: 0 20px;
+    max-width: 695px;
+  }
+}

@@ -1,0 +1,378 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+@use '../base/texts' as *;
+@use '../base/breakpoints' as *;
+
+.card {
+  @include flexColumn;
+  row-gap: 12px;
+  box-shadow: $shadowCard;
+  border-radius: 16px;
+  background-color: $white;
+  padding: 12px;
+  position: relative;
+  transition: box-shadow 0.2s ease-in;
+
+  @include hover {
+    box-shadow: $shadowHover;
+  }
+
+  @include hover {
+    .card__top-view {
+      opacity: 100;
+      z-index: 2;
+    }
+  }
+
+  &__top {
+    position: relative;
+  }
+
+  &__top-view {
+    @include flexCenter;
+    width: fit-content;
+    column-gap: 8px;
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: $shadowHover;
+    background-color: $white;
+    padding: 4px 10px;
+    border-radius: 7px;
+    transition:
+      z-index 0.2s ease-in-out,
+      opacity 0.2s ease-in;
+    z-index: -2;
+    opacity: 0;
+  }
+
+  &__top-view-icon {
+    @include sizes(20px, 20px);
+    flex-shrink: 0;
+  }
+
+  &__top-view-text {
+    @include boldManrope12;
+    color: $grey;
+    flex-shrink: 0;
+  }
+
+  &__top-btns {
+    position: absolute;
+    display: flex;
+    column-gap: 4px;
+    right: 4px;
+    top: 0;
+    z-index: 2;
+  }
+
+  &__top-btn {
+    @include sizes(28px, 28px);
+    padding: 6px;
+    box-shadow: $shadowBtn;
+    background-color: $white;
+    border-radius: 7px;
+    transition:
+      box-shadow 0.2s ease-in-out,
+      background-color 0.2s ease-in-out;
+
+    &:not(.--active) {
+      &:hover {
+        box-shadow: $shadowHover;
+
+        svg {
+          fill: $blue;
+        }
+      }
+    }
+
+    &.--active {
+      box-shadow: $shadowBtn;
+      background-color: $blue;
+
+      svg {
+        fill: $white;
+      }
+    }
+  }
+
+  &__top-info {
+    @include flexCenterBetween;
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    padding: 0px 4px;
+  }
+
+  &__top-art {
+    @include regularManrope12;
+    padding: 4px 6px;
+    background-color: $white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__top-img img {
+    object-fit: cover;
+  }
+
+  &__top-comment {
+    @include flexCenter;
+    column-gap: 4px;
+    padding: 4px;
+  }
+
+  &__top-comment-count {
+    @include regularManrope12;
+  }
+
+  &__top-comment-icon {
+    @include sizes(14px, 14px);
+  }
+
+  &__bottom {
+    @include flexColumn;
+    row-gap: 20px;
+  }
+
+  &__bottom-top {
+    @include flexColumn;
+    row-gap: 12px;
+    justify-content: space-between;
+  }
+
+  &__bottom-title {
+    @include regularInter16;
+    @include croppingText(3);
+    height: 72px;
+  }
+
+  &__bottom-items {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+
+  &__bottom-status {
+    @include boldManrope12;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: $white;
+
+    &--no-stock {
+      color: $error;
+      background-color: $errorSec;
+    }
+
+    &--new {
+      background-color: $blue;
+    }
+
+    &--percent {
+      background-color: $yellow;
+    }
+
+    &--sale {
+      background-color: $green;
+    }
+
+    &--in-stock {
+      color: $green;
+      background-color: $greenSec;
+    }
+
+    &--hit {
+      background-color: $hit;
+    }
+  }
+
+  &__prices {
+    @include flexEndStart;
+    column-gap: 12px;
+  }
+
+  &__prices-actual {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 4px;
+  }
+
+  &__price {
+    @include semiboldInter20;
+  }
+
+  &__price-unit,
+  &__prices-old {
+    @include regularInter14;
+    color: $grey;
+  }
+
+  &__prices-old {
+    text-decoration: line-through;
+  }
+
+  &__btns {
+    .js-card-cart,
+    .js-card-counts {
+      display: none;
+    }
+
+    .js-card-cart,
+    .js-card-counts {
+      &.--active {
+        display: flex;
+      }
+    }
+  }
+
+  &__btns-counts {
+    @include sizes(100%, 48px);
+    @include flexCenterBetween;
+    column-gap: 8px;
+  }
+
+  &__btns-count,
+  &__btns-btn {
+    @include fullSize;
+    @include flexCenter;
+    @include mediumInter16;
+    border: 1px solid $borderGrey;
+    border-radius: 7px;
+    padding: 12px;
+  }
+
+  &__btns-btn {
+    @include sizes(48px, 48px);
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in;
+
+    &:not(:disabled) {
+      @include hover {
+        svg {
+          fill: $blue;
+        }
+      }
+
+      &:active {
+        background-color: $blue;
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+@include desktop-xl {
+  .card {
+    border-radius: 12px;
+    row-gap: 8px;
+
+    &__top-btns {
+      right: -2px;
+      top: -2px;
+    }
+
+    &__top-art {
+      @include regularManrope10;
+    }
+
+    &__top-comment {
+      padding: 4px 4px 0 4px;
+    }
+
+    &__bottom-title {
+      @include regularInter14;
+      height: 60px;
+    }
+
+    &__bottom-top {
+      row-gap: 8px;
+    }
+
+    &__bottom-status {
+      @include boldManrope10;
+    }
+
+    &__bottom {
+      row-gap: 12px;
+    }
+
+    &__price {
+      @include semiboldInter16;
+    }
+
+    &__prices-old {
+      @include regularInter12;
+    }
+
+    &__top-img img {
+      min-height: 140px;
+    }
+
+    &__btns-btn {
+      @include sizes(36px, 36px);
+    }
+
+    &__btns-counts {
+      height: 36px;
+      column-gap: 4px;
+    }
+
+    &__btns-btn {
+      padding: 8px;
+    }
+  }
+}
+
+@include desktop {
+  .card {
+    padding: 8px;
+
+    &__top-btn {
+      @include sizes(32px, 32px);
+    }
+
+    &__top-btns {
+      column-gap: 8px;
+      right: 0;
+      top: 0;
+    }
+
+    &__top-img img {
+      min-height: 148px;
+    }
+
+    &__top-info {
+      padding: 0 4px;
+      bottom: 0;
+    }
+
+    &__bottom-top {
+      row-gap: 12px;
+    }
+
+    &__bottom-status {
+      padding: 2px 4px;
+      @include boldManrope8;
+      border-radius: 3px;
+    }
+
+    &__bottom {
+      row-gap: 12px;
+    }
+
+    &__prices {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-top: 4px;
+      row-gap: 4px;
+    }
+
+    &__prices-old {
+      line-height: 16px;
+    }
+  }
+}

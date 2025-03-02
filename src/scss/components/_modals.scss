@@ -1,0 +1,137 @@
+@use '../base/mixins' as *;
+@use '../base/vars' as *;
+@use '../base/texts' as *;
+@use '../base/breakpoints' as *;
+
+.modal {
+  background-color: $modalBg;
+  @include flexCenter;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -100;
+  transition:
+    opacity 0.2s ease-in,
+    z-index 0.2s ease-in;
+
+  &.--open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+  }
+
+  &__inner {
+    @include flexCenter;
+    gap: 12px;
+    position: relative;
+  }
+
+  &__content {
+    @include flexColumn;
+    row-gap: 24px;
+    background-color: $white;
+    box-shadow: $shadowModal;
+    border-radius: 24px;
+    width: 422px;
+    padding: 28px;
+    position: relative;
+  }
+
+  &__icon {
+    margin: 0 auto;
+  }
+
+  &__texts {
+    @include flexColumn;
+    row-gap: 4px;
+    align-items: center;
+  }
+
+  &__title {
+    @include mediumInter20;
+  }
+
+  &__text {
+    @include regularInter14;
+    color: $grey;
+  }
+
+  &__close {
+    @include sizes(28px, 28px);
+    @include flexCenter;
+    border-radius: 50%;
+    background-color: $whiteBlue;
+    position: absolute;
+    right: -40px;
+    top: 0;
+    padding: 6px;
+    transition:
+      box-shadow 0.2s ease-in,
+      background-color 0.2s ease-in;
+
+    @include hover {
+      background-color: $blueHover;
+      box-shadow: $shadowHover;
+    }
+
+    &:active {
+      box-shadow: $shadowBtn;
+      background-color: $blueActive;
+    }
+  }
+}
+
+@include desktop-xl {
+  .modal {
+    &__title {
+      @include mediumInter16;
+    }
+
+    &__text {
+      @include regularInter12;
+    }
+  }
+}
+
+@include tablet {
+  .modal {
+    background-color: $white;
+
+    &__content {
+      box-shadow: none;
+      row-gap: 16px;
+      max-width: 200px;
+      padding: 0;
+    }
+
+    &__inner {
+      margin-top: 48px;
+      position: static;
+    }
+
+    &__icon {
+      @include sizes(80px, 80px);
+    }
+
+    &__close {
+      right: 28px;
+      top: 28px;
+    }
+  }
+}
+
+@include mobile-lg {
+  .modal {
+    &__inner {
+      margin-top: 64px;
+    }
+
+    &__title {
+      @include mediumInter14;
+    }
+  }
+}

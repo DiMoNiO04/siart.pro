@@ -1,0 +1,47 @@
+@use 'vars' as *;
+
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  width: 100%;
+  height: 100%;
+  transition:
+    stroke 0.2s ease-in-out,
+    fill 0.2s ease-in-out;
+
+  &--swiper,
+  &--close-modal {
+    stroke: $blue;
+  }
+
+  &--like,
+  &--comparison {
+    fill: $textColor;
+  }
+
+  &--comment {
+    fill: $blueHover;
+  }
+
+  &--cart,
+  &--file {
+    fill: $blue;
+  }
+
+  &--plus,
+  &--minus {
+    fill: $black;
+  }
+
+  &--viewFull {
+    fill: $grey;
+  }
+
+  &--close {
+    stroke: $grey;
+  }
+
+  &--successInput {
+    stroke: $green;
+  }
+}
